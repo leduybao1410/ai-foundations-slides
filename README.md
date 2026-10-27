@@ -24,8 +24,8 @@ Chat nổi ở mục lục, trang minh họa và thử thách. Khi gửi câu h�
 
 1. Trong n8n, import [`integrations/n8n/course-chat.workflow.json`](integrations/n8n/course-chat.workflow.json).
 2. Tạo credential **Header Auth** cho node **Website chat webhook**: header `X-Course-Chat-Key`, value là một chuỗi bí mật dài, sinh riêng cho app này.
-3. Tạo credential **Header Auth** cho node **OpenAI course answer**: header `Authorization`, value `Bearer <OpenAI API key>`. API key chỉ được lưu trong n8n.
-4. Chọn hai credential vừa tạo ở node tương ứng, lưu và activate workflow. Dùng **Production URL** của webhook: `https://epic-n8n.n1.tinhgon.xyz/webhook/ai-foundations-chat`.
+3. Chọn credential **Header Auth** có header `Authorization` và domain `api.deepseek.com` cho node **DeepSeek course answer**. Workflow dùng model `deepseek-flash`, theo cách EPIC đang gọi DeepSeek.
+4. Chọn credential mới ở node webhook và credential DeepSeek hiện có ở node model, lưu rồi activate workflow. Dùng **Production URL** của webhook: `https://epic-n8n.n1.tinhgon.xyz/webhook/ai-foundations-chat`.
 5. Trong Vercel Project → Settings → Environment Variables, đặt `N8N_CHAT_WEBHOOK_URL` (Production URL), `N8N_CHAT_SHARED_SECRET` (đúng giá trị ở bước 2), và `CHAT_ALLOWED_HOSTNAMES=ai-foundations-slides.vercel.app`. Thêm custom domain vào danh sách nếu có. Redeploy sau khi cập nhật biến môi trường.
 
 Tên biến có trong [`.env.example`](.env.example). Không commit giá trị bí mật. Workflow nhập vào ở trạng thái **inactive** để credentials được thiết lập trước khi kích hoạt. API trả `503` tới khi đủ biến môi trường. Endpoint kiểm tra `Origin`, giới hạn kích thước nội dung, thời gian chờ và độ dài câu trả lời; bộ giới hạn 12 tin/phút trong function chỉ có tính best-effort theo từng instance Vercel. Trước khi mở chat công khai ở quy mô lớn, hãy bật rate limit ở Vercel Firewall hoặc lớp gateway có bộ đếm dùng chung.

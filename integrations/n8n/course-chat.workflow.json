@@ -12,9 +12,9 @@
       "id":"cb18dc5e-f465-4b5a-9a06-69c7f301a202","name":"Prepare grounded prompt","type":"n8n-nodes-base.code","typeVersion":2,"position":[-350,0]
     },
     {
-      "parameters": {"method":"POST","url":"https://api.openai.com/v1/chat/completions","authentication":"genericCredentialType","genericAuthType":"httpHeaderAuth","sendHeaders":true,"headerParameters":{"parameters":[{"name":"Content-Type","value":"application/json"}]},"sendBody":true,"contentType":"raw","rawContentType":"application/json","body":"={{ JSON.stringify({ model: 'gpt-4o-mini', messages: $json.messages, max_tokens: 700, stream: false }) }}","options":{"timeout":15000,"response":{"response":{"neverError":false}}}},
-      "credentials":{"httpHeaderAuth":{"id":"CONFIGURE_OPENAI_HEADER_CREDENTIAL_IN_N8N","name":"OpenAI API key"}},
-      "id":"cb18dc5e-f465-4b5a-9a06-69c7f301a203","name":"OpenAI course answer","type":"n8n-nodes-base.httpRequest","typeVersion":4.2,"position":[-70,0]
+      "parameters": {"method":"POST","url":"https://api.deepseek.com/chat/completions","authentication":"genericCredentialType","genericAuthType":"httpHeaderAuth","sendHeaders":true,"headerParameters":{"parameters":[{"name":"Content-Type","value":"application/json"}]},"sendBody":true,"contentType":"raw","rawContentType":"application/json","body":"={{ JSON.stringify({ model: 'deepseek-flash', messages: $json.messages, max_tokens: 700, stream: false, thinking: { type: 'disabled' } }) }}","options":{"timeout":15000,"response":{"response":{"neverError":false}}}},
+      "credentials":{"httpHeaderAuth":{"id":"CONFIGURE_DEEPSEEK_CREDENTIAL_IN_N8N","name":"DeepSeek API key"}},
+      "id":"cb18dc5e-f465-4b5a-9a06-69c7f301a203","name":"DeepSeek course answer","type":"n8n-nodes-base.httpRequest","typeVersion":4.2,"position":[-70,0]
     },
     {
       "parameters":{"jsCode":"const response = $input.first().json;\nconst output = response.choices?.[0]?.message?.content;\nif (typeof output !== 'string' || !output.trim()) throw new Error('OpenAI returned no course answer');\nreturn [{json:{output:output.trim().slice(0,4000)}}];"},
@@ -27,8 +27,8 @@
   ],
   "connections": {
     "Website chat webhook":{"main":[[{"node":"Prepare grounded prompt","type":"main","index":0}]]},
-    "Prepare grounded prompt":{"main":[[{"node":"OpenAI course answer","type":"main","index":0}]]},
-    "OpenAI course answer":{"main":[[{"node":"Limit response","type":"main","index":0}]]},
+    "Prepare grounded prompt":{"main":[[{"node":"DeepSeek course answer","type":"main","index":0}]]},
+    "DeepSeek course answer":{"main":[[{"node":"Limit response","type":"main","index":0}]]},
     "Limit response":{"main":[[{"node":"Return answer","type":"main","index":0}]]}
   },
   "settings":{"executionOrder":"v1","timezone":"Asia/Ho_Chi_Minh","saveDataErrorExecution":"none","saveDataSuccessExecution":"none","saveExecutionProgress":false},
