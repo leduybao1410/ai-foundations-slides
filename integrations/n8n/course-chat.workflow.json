@@ -17,7 +17,7 @@
       "id":"cb18dc5e-f465-4b5a-9a06-69c7f301a203","name":"DeepSeek course answer","type":"n8n-nodes-base.httpRequest","typeVersion":4.2,"position":[-70,0]
     },
     {
-      "parameters":{"jsCode":"const response = $input.first().json;\nconst output = response.choices?.[0]?.message?.content;\nif (typeof output !== 'string' || !output.trim()) throw new Error('OpenAI returned no course answer');\nreturn [{json:{output:output.trim().slice(0,4000)}}];"},
+      "parameters":{"jsCode":"const response = $input.first().json;\nconst output = response.choices?.[0]?.message?.content;\nif (typeof output !== 'string' || !output.trim()) throw new Error('DeepSeek returned no course answer');\nreturn [{json:{output:output.trim().slice(0,4000)}}];"},
       "id":"cb18dc5e-f465-4b5a-9a06-69c7f301a204","name":"Limit response","type":"n8n-nodes-base.code","typeVersion":2,"position":[200,0]
     },
     {
