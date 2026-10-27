@@ -5,7 +5,7 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-27T16:42:52.399Z",
+  "startedAt": "2026-10-27T17:08:46.642Z",
   "specification": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-10-first-order-inference-20261026-173000/candidate.archify.md",
     "sha256": "8c7c8a3f91e00041828e34f192684aa9b72d054586a94be1620189dfae6adcf6",
@@ -58,7 +58,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 774,
+      "durationMs": 606,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
@@ -72,14 +72,14 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "f6455dea-026c-4218-ab4e-806acffeac5b",
+        "receiptId": "7dd2e1e2-8b2f-4069-86dd-22847aa030e5",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-10-first-order-inference-20261026-173000/candidate.archify.md",
         "output": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-10-first-order-inference-20261026-173000/topic-10.html",
         "explainer": {
-          "preparedSha256": "509abdab9b84a91de549c65492eb5cae3f1cfd73f74d2da7a38782de66bd88ec",
+          "preparedSha256": "6331e7c903d73e1c9737821b26cccd28ddf8629be17ab3b7bc04c360dcd37def",
           "dependencies": [
             {
               "kind": "diagram-spec",
@@ -188,7 +188,7 @@
               "id": "forward-family",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-gcICH2/child.html",
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-A3PH1b/child.html",
                 "artifact": {
                   "sha256": "36503c30711ba84a032f65e7ea206ce6c992d1c4d35efe6c51749e5ef5194b8c",
                   "bytes": 831493
@@ -315,7 +315,7 @@
               "id": "backward-family",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-8zBA5E/child.html",
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-VEPEgF/child.html",
                 "artifact": {
                   "sha256": "39aabb4422c8f61e3359b791fb5f1dd8dffc366e3735dbef3f0f0fc45eb7bef8",
                   "bytes": 833070
@@ -442,7 +442,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "f6455dea-026c-4218-ab4e-806acffeac5b"
+        "deliveryReceiptId": "7dd2e1e2-8b2f-4069-86dd-22847aa030e5"
       }
     }
   },
@@ -456,8 +456,8 @@
     "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-10-first-order-inference-20261026-173000/topic-10.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-27T16:42:53.645Z",
-  "durationMs": 1246,
+  "finishedAt": "2026-10-27T17:08:47.681Z",
+  "durationMs": 1039,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

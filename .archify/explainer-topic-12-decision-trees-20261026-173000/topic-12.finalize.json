@@ -5,7 +5,7 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-27T16:42:55.246Z",
+  "startedAt": "2026-10-27T17:08:49.219Z",
   "specification": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md",
     "sha256": "b386c9fb6b5c38752b19918d5bcba3c2b690582cb128cecbed1015163f29bb19",
@@ -58,7 +58,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 466,
+      "durationMs": 445,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
@@ -72,14 +72,14 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "cf88b49a-923b-4fba-9b9c-e913466499a9",
+        "receiptId": "33e6c714-56df-491a-93d5-fe63b6e71aea",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md",
         "output": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.html",
         "explainer": {
-          "preparedSha256": "cefc757aa7191dc8c4a9b4421be04830f702c2162c5b65a1f8c29b6c0fa61261",
+          "preparedSha256": "0230db4cf6d1b9a7296f933e0c099f7055864e725e1832e521cb08fe92a4d47e",
           "dependencies": [
             {
               "kind": "diagram-spec",
@@ -122,7 +122,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 218,
+      "durationMs": 206,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
@@ -180,7 +180,7 @@
               "id": "id3-tree",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-6bJvzg/child.html",
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-IODstt/child.html",
                 "artifact": {
                   "sha256": "9fd37c134064914c0c03cd98926b07e22ea63be9f3a4389cba399c87a517a149",
                   "bytes": 836917
@@ -307,7 +307,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "cf88b49a-923b-4fba-9b9c-e913466499a9"
+        "deliveryReceiptId": "33e6c714-56df-491a-93d5-fe63b6e71aea"
       }
     }
   },
@@ -321,8 +321,8 @@
     "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-27T16:42:56.071Z",
-  "durationMs": 825,
+  "finishedAt": "2026-10-27T17:08:50.004Z",
+  "durationMs": 784,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

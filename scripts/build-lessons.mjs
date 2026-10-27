@@ -58,6 +58,8 @@ function renderIndex(manifest) {
   <title>${escapeHtml(manifest.title)}</title>
   <script defer src="challenge-core.js"></script>
   <script defer src="index-progress.js"></script>
+  <script defer src="lesson-catalog.js"></script>
+  <script defer src="chat-widget.js"></script>
   <style>
     :root { color-scheme: light; --ink:#192d36; --muted:#5c7078; --line:#dce6e7; --accent:#0a706b; --paper:#f4f8f7; }
     * { box-sizing:border-box; }
@@ -137,7 +139,14 @@ for (const lesson of manifest.lessons) {
   if (generated.split(anchor).length !== 2) throw new Error(`Cannot locate a unique lesson footer for ${lesson.id}`);
   const challengeHref = `${localHref(path.dirname(lesson.output), 'lessons/challenge.html')}?topic=${encodeURIComponent(lesson.id)}`;
   const challengeCta = `<section aria-label="Thử thách luyện tập" style="margin:24px auto;padding:22px;max-width:1000px;border:1px solid #b9d9d0;border-radius:16px;background:#edf8f3;color:#153a42;font-family:system-ui,sans-serif"><h2 style="margin:0 0 8px">Sẵn sàng thử sức?</h2><p>Áp dụng kiến thức qua ba bước, nhận phản hồi và lưu điểm cao nhất trên trình duyệt này.</p><a href="${escapeHtml(challengeHref)}" style="display:inline-block;padding:12px 18px;border-radius:10px;background:#086c64;color:white;font-weight:700;text-decoration:none">Chơi thử thách →</a></section>`;
-  await writeFile(output, generated.replace(anchor, `${challengeCta}${anchor}`), 'utf8');
+  const chatMeta = `<meta name="course-chat-topic" content="${escapeHtml(lesson.id)}"><link rel="stylesheet" href="${escapeHtml(localHref(path.dirname(lesson.output), 'lessons/chat-widget.css'))}">`;
+  const chatScripts = `<script defer src="${escapeHtml(localHref(path.dirname(lesson.output), 'lessons/lesson-catalog.js'))}"></script><script defer src="${escapeHtml(localHref(path.dirname(lesson.output), 'lessons/chat-widget.js'))}"></script>`;
+  if (generated.split('</head>').length !== 2 || !generated.endsWith('</script></body></html>')) throw new Error(`Cannot locate the unique document head and body ending for ${lesson.id}`);
+  const withChatHead = generated.replace('</head>', `${chatMeta}</head>`);
+  const withChallenge = withChatHead.replace(anchor, `${challengeCta}${anchor}`);
+  const bodyEnd = '</script></body></html>';
+  const bodyEndPosition = withChallenge.lastIndexOf(bodyEnd);
+  await writeFile(output, `${withChallenge.slice(0, bodyEndPosition)}${chatScripts}${withChallenge.slice(bodyEndPosition)}`, 'utf8');
   const record = { id: lesson.id, output: lesson.output, stdout: result.stdout.trim() };
   built.push(record);
   process.stdout.write(`Built Topic ${lesson.topic}: ${path.relative(repoRoot, output)}\n`);
@@ -152,6 +161,7 @@ const catalog = manifest.lessons.map(lesson => ({
   id: lesson.id, topic: lesson.topic, title: lesson.title,
   output: localHref('lessons', lesson.output),
   source: localHref('lessons', lesson.sourcePdf),
+  note: localHref('lessons', lesson.note),
 }));
 await writeFile(path.join(repoRoot, 'lessons', 'lesson-catalog.js'), `window.LessonCatalog = ${JSON.stringify(catalog, null, 2)};\n`, 'utf8');
 const receipt = {

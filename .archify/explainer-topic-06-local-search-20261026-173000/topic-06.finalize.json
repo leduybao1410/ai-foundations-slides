@@ -5,7 +5,7 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-27T16:42:46.099Z",
+  "startedAt": "2026-10-27T17:08:40.885Z",
   "specification": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-06-local-search-20261026-173000/candidate.archify.md",
     "sha256": "f6aced7ba46ff21b8b4f79c55066cef845b9152d8d895d979c78b36d08db61bc",
@@ -58,7 +58,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 823,
+      "durationMs": 766,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
@@ -72,14 +72,14 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "fc4e999e-3f63-4f0a-ac28-83d466ef25af",
+        "receiptId": "c720072d-7eae-4693-81ef-dfbed1d79fb7",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-06-local-search-20261026-173000/candidate.archify.md",
         "output": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-06-local-search-20261026-173000/topic-06.html",
         "explainer": {
-          "preparedSha256": "0b644f66694b345f48032dc5759fdba8a1dad2bee4e8dbc3176546aa0fe8ef52",
+          "preparedSha256": "2faae79739c42badc821956523b278e1166543b1b28c8507e731fa973e24ffdf",
           "dependencies": [
             {
               "kind": "diagram-spec",
@@ -136,7 +136,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 383,
+      "durationMs": 381,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
@@ -196,7 +196,7 @@
               "id": "hill-landscape",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-p6M2kD/child.html",
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-l1OEQz/child.html",
                 "artifact": {
                   "sha256": "5fff9b0c26aa030f128cd1e42d66f7f3cb6203d9a3e01bedc90739c11c8273f6",
                   "bytes": 833239
@@ -323,7 +323,7 @@
               "id": "annealing",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-BUv1Ad/child.html",
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-wBZGqT/child.html",
                 "artifact": {
                   "sha256": "7e2980b1375bbe4826993f6590bfa0f88f4e4894f46918f456538716af73c8fa",
                   "bytes": 837079
@@ -450,7 +450,7 @@
               "id": "ga-cycle",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-wAxU6B/child.html",
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-kaESU6/child.html",
                 "artifact": {
                   "sha256": "13b38e4ecf326d93321b8a322e6e976b0eb0c193b3f8c369c2975beb8d33b2f0",
                   "bytes": 836578
@@ -577,7 +577,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "fc4e999e-3f63-4f0a-ac28-83d466ef25af"
+        "deliveryReceiptId": "c720072d-7eae-4693-81ef-dfbed1d79fb7"
       }
     }
   },
@@ -591,8 +591,8 @@
     "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-06-local-search-20261026-173000/topic-06.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-27T16:42:47.441Z",
-  "durationMs": 1342,
+  "finishedAt": "2026-10-27T17:08:42.166Z",
+  "durationMs": 1280,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

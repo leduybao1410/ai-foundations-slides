@@ -5,7 +5,7 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-27T16:42:54.033Z",
+  "startedAt": "2026-10-27T17:08:48.042Z",
   "specification": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
     "sha256": "5ea97d4ee1272f9cfdd27f674ebd2d07b445148500f9511cbf7524e82c5877a0",
@@ -58,7 +58,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 459,
+      "durationMs": 450,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
@@ -72,14 +72,14 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "f68b4401-995a-40b4-8eeb-2432e9128e7d",
+        "receiptId": "60ed45f3-5f99-48e0-8754-09cfff46bf3e",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
         "output": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
         "explainer": {
-          "preparedSha256": "1722f8cd063b0e4d21f3fcb29c36be0c3730b41b70eef7b9ed68a8f7f1eb9b77",
+          "preparedSha256": "324afee112181617c33e8ae492d106fa6b4e8a42cae9eb646b27bde6c5e9a900",
           "dependencies": [
             {
               "kind": "diagram-spec",
@@ -122,7 +122,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 217,
+      "durationMs": 202,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
@@ -180,7 +180,7 @@
               "id": "bayes-pipeline",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-37FBU1/child.html",
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-q6s9Zz/child.html",
                 "artifact": {
                   "sha256": "c3455470635f76e47f67ca699e56ad936df8ea31091b198c9b1b52450e5bc702",
                   "bytes": 833842
@@ -307,7 +307,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "f68b4401-995a-40b4-8eeb-2432e9128e7d"
+        "deliveryReceiptId": "60ed45f3-5f99-48e0-8754-09cfff46bf3e"
       }
     }
   },
@@ -321,8 +321,8 @@
     "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-27T16:42:54.837Z",
-  "durationMs": 804,
+  "finishedAt": "2026-10-27T17:08:48.829Z",
+  "durationMs": 786,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

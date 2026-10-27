@@ -42,7 +42,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 900,
+  "durationMs": 801,
   "browserCheck": {
     "requested": false,
     "ran": false

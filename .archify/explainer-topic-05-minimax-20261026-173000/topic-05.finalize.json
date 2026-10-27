@@ -5,7 +5,7 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-27T16:42:43.080Z",
+  "startedAt": "2026-10-27T17:08:38.124Z",
   "specification": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-minimax-20261026-173000/candidate.archify.md",
     "sha256": "3f876bbcd15170f48b7c26643ef1f673f067829e15915c28b3da8f31cd0e5f8d",
@@ -58,7 +58,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 490,
+      "durationMs": 463,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
@@ -72,14 +72,14 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "a8199c27-5ec5-46a5-8fa2-6c20de9621bb",
+        "receiptId": "530e1c5a-297f-4fc2-8791-05df00626d4b",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-minimax-20261026-173000/candidate.archify.md",
         "output": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-minimax-20261026-173000/topic-05.html",
         "explainer": {
-          "preparedSha256": "c0ef5f521c29d921139340b844353e205e183ef3a3556a21becacf9caebdb786",
+          "preparedSha256": "fd548bc970fa4a116abf0715f06fab459e6c1b4b6d4084e15e96d3d232bdcf07",
           "dependencies": [
             {
               "kind": "diagram-spec",
@@ -122,7 +122,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 222,
+      "durationMs": 209,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
@@ -180,7 +180,7 @@
               "id": "minimax-tree",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-2QhPPG/child.html",
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-9xxyh0/child.html",
                 "artifact": {
                   "sha256": "27c674484e578a167c615218d3bcf0be81cd20e1cdb83c4ddbf97c81a731d9f7",
                   "bytes": 846529
@@ -307,7 +307,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "a8199c27-5ec5-46a5-8fa2-6c20de9621bb"
+        "deliveryReceiptId": "530e1c5a-297f-4fc2-8791-05df00626d4b"
       }
     }
   },
@@ -321,8 +321,8 @@
     "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-minimax-20261026-173000/topic-05.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-27T16:42:43.934Z",
-  "durationMs": 853,
+  "finishedAt": "2026-10-27T17:08:38.928Z",
+  "durationMs": 803,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",
