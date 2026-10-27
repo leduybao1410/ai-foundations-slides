@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "87f4fef3-91e4-4c10-b2b7-27f1e4cfc71b",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/candidate.archify.md",
+  "output": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/topic-05.1.html",
+  "specification": {
+    "sha256": "163e8c5c74afb0009f36002492c4a18465293fc1d2f52ee9060d13e232fcf387",
+    "bytes": 2975
+  },
+  "artifact": {
+    "sha256": "7020882a1ee1a9728e11315a262a41cd3985f2c4b0b2c7d93d403ba12470c767",
+    "bytes": 530282
+  },
+  "explainer": {
+    "preparedSha256": "e54a379a1945da762e327b5b149abd93820f643f4a918cb3428860ba06605b29",
+    "dependencies": [
+      {
+        "kind": "diagram-spec",
+        "id": "expectimax-tree",
+        "inline": true,
+        "sha256": "48e0316210b00dccb758919f6cb5ad00da22bff859f36ff43ff63b1090c09759",
+        "bytes": 1114
+      }
+    ]
+  }
+}

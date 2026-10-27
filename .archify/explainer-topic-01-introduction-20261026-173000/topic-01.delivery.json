@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "5e176af6-f092-4c86-8836-d695fc664d08",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-01-introduction-20261026-173000/candidate.archify.md",
+  "output": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-01-introduction-20261026-173000/topic-01.html",
+  "specification": {
+    "sha256": "2596b5ec004a265408e6b3cbb02afd96085673263a89ded43d4f5d8caba6dc8c",
+    "bytes": 2861
+  },
+  "artifact": {
+    "sha256": "b2e25d9049b9c8d382a4413c517f34ff62b8c5cae7954cc80a907f026bcee277",
+    "bytes": 533358
+  },
+  "explainer": {
+    "preparedSha256": "8a42443636373ae6fb21ada48d63e568fe5b60c76eeae40977c4b4f16d3c2af3",
+    "dependencies": [
+      {
+        "kind": "diagram-spec",
+        "id": "agent-flow",
+        "inline": true,
+        "sha256": "c0bb8541b7883a1db434e34de4c1805a000ec2d9027725f2ef5615775712a67a",
+        "bytes": 1194
+      }
+    ]
+  }
+}

@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-10-26T10:56:52.778Z",
+  "specification": {
+    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md",
+    "sha256": "a6ea4869c8206a3ed710dd77d1bb8e4a26a0b1ecec8b35294304646cbce2eeab",
+    "bytes": 2944
+  },
+  "artifact": {
+    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.html",
+    "sha256": "514ff211b7e717d53afde9146cd69cc85a9f03922cd03c0226ea84b267ef6f06",
+    "bytes": 549783
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/usr/local/bin/node",
+        "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md",
+        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.html",
+        "--quality",
+        "showcase",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "a6ea4869c8206a3ed710dd77d1bb8e4a26a0b1ecec8b35294304646cbce2eeab",
+          "bytes": 2944
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 458,
+      "command": [
+        "/usr/local/bin/node",
+        "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md",
+        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.html",
+        "--quality",
+        "showcase",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "60cc1f07-b911-4216-be1c-ee3085d37b87",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md",
+        "output": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.html",
+        "explainer": {
+          "preparedSha256": "800d558f4733479399c553753f3e4ce25f659b24783db1fcdfb809dfdc9d57f4",
+          "dependencies": [
+            {
+              "kind": "diagram-spec",
+              "id": "id3-tree",
+              "inline": true,
+              "sha256": "a6bb9ee0680a5723dd35731a6fb92f896871228e64363cfc4ffd2969d8099c64",
+              "bytes": 1536
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "a6ea4869c8206a3ed710dd77d1bb8e4a26a0b1ecec8b35294304646cbce2eeab",
+          "bytes": 2944
+        },
+        "artifact": {
+          "sha256": "514ff211b7e717d53afde9146cd69cc85a9f03922cd03c0226ea84b267ef6f06",
+          "bytes": 549783
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 210,
+      "command": [
+        "/usr/local/bin/node",
+        "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
+        "check",
+        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "514ff211b7e717d53afde9146cd69cc85a9f03922cd03c0226ea84b267ef6f06",
+          "bytes": 549783
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "43 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "1 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "id3-tree: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "id3-tree",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-zoi2I6/child.html",
+                "artifact": {
+                  "sha256": "9fd37c134064914c0c03cd98926b07e22ea63be9f3a4389cba399c87a517a149",
+                  "bytes": 836917
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 27,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 3,
+                    "shortEndpointSegmentCount": 3,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "outlook-to-overcast-1",
+                      "from": "outlook",
+                      "to": "overcast"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 15
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "60cc1f07-b911-4216-be1c-ee3085d37b87"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.finalize.json",
+    "summaryReceipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-10-26T10:56:53.576Z",
+  "durationMs": 798,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-21T10:30:18.630Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

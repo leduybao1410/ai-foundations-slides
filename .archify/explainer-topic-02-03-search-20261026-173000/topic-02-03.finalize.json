@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-10-26T10:56:38.562Z",
+  "specification": {
+    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/candidate.archify.md",
+    "sha256": "827bb1ca55e322d1c59cdd1f86615036344f31f61d43d1e614903a614cc14397",
+    "bytes": 3947
+  },
+  "artifact": {
+    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/topic-02-03.html",
+    "sha256": "50cf408b21aef507679df039606c7274f8e039c0bb7ef898000e0b5cfc047b57",
+    "bytes": 545193
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/usr/local/bin/node",
+        "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/candidate.archify.md",
+        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/topic-02-03.html",
+        "--quality",
+        "showcase",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "827bb1ca55e322d1c59cdd1f86615036344f31f61d43d1e614903a614cc14397",
+          "bytes": 3947
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 460,
+      "command": [
+        "/usr/local/bin/node",
+        "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/candidate.archify.md",
+        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/topic-02-03.html",
+        "--quality",
+        "showcase",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "13631c3d-c799-4c01-8b0e-1d2d47633adb",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/candidate.archify.md",
+        "output": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/topic-02-03.html",
+        "explainer": {
+          "preparedSha256": "5387b096dfffeb9ca17ac08a48a895572ba07180899276aa568514b07616c48e",
+          "dependencies": [
+            {
+              "kind": "diagram-spec",
+              "id": "search-map",
+              "inline": true,
+              "sha256": "5ccb8525fd9afb1cce9f64401d59fc255fa6a44a5d8ab4c2a24efadc70300ccb",
+              "bytes": 1110
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "827bb1ca55e322d1c59cdd1f86615036344f31f61d43d1e614903a614cc14397",
+          "bytes": 3947
+        },
+        "artifact": {
+          "sha256": "50cf408b21aef507679df039606c7274f8e039c0bb7ef898000e0b5cfc047b57",
+          "bytes": 545193
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 218,
+      "command": [
+        "/usr/local/bin/node",
+        "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
+        "check",
+        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/topic-02-03.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/topic-02-03.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "50cf408b21aef507679df039606c7274f8e039c0bb7ef898000e0b5cfc047b57",
+          "bytes": 545193
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "53 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "1 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "search-map: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "search-map",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-8KH0fx/child.html",
+                "artifact": {
+                  "sha256": "31f9a8601cf433c09471050e5b6531c8943225bcb6e600a98b7e3bb260b76509",
+                  "bytes": 832356
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 27,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 13,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 1,
+                    "shortEndpointSegmentCount": 1,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "a-to-c-1",
+                      "from": "a",
+                      "to": "c"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 11
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "13631c3d-c799-4c01-8b0e-1d2d47633adb"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/topic-02-03.finalize.json",
+    "summaryReceipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/topic-02-03.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-10-26T10:56:39.363Z",
+  "durationMs": 801,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-21T10:30:18.630Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

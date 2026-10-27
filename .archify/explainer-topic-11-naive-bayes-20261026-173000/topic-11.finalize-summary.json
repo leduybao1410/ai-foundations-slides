@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
+    "sha256": "d08bd968f77f1d18446082fc4846d23ccd8daf17b27881b3e6bcc91317580e16",
+    "bytes": 3407
+  },
+  "artifact": {
+    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
+    "sha256": "1582b301695dc77f4f8ac3b6ef8bee2ffdf9f7808f7a96397125a602229d3e18",
+    "bytes": 552134
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.finalize.json",
+    "summaryReceipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-21T10:30:18.630Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 791,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "5886f4b7-ab3a-4269-8bd7-2828990a9bd4",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-08-resolution-20261026-173000/candidate.archify.md",
+  "output": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-08-resolution-20261026-173000/topic-08.html",
+  "specification": {
+    "sha256": "3c6feb98bf445eabedd4d796ea5b9ac041a8f03812fba9fd33e422f7ab9275e5",
+    "bytes": 2795
+  },
+  "artifact": {
+    "sha256": "30771ceedd657794aeb166a00a03c74d0b5a902d6c48e8780369b815124e2a10",
+    "bytes": 552963
+  },
+  "explainer": {
+    "preparedSha256": "189b3acc2741f8e0f0dbed62cce01385cb92093ce3d265cca7cdd84f58f35cb1",
+    "dependencies": [
+      {
+        "kind": "diagram-spec",
+        "id": "resolution-proof",
+        "inline": true,
+        "sha256": "6c7ce8cea65d247e1ad6d77226414851f65de6c78fd35871f5012aa6c2b498b4",
+        "bytes": 1507
+      }
+    ]
+  }
+}

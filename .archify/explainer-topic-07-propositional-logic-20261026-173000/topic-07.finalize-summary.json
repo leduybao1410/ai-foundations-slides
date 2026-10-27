@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/candidate.archify.md",
+    "sha256": "4791de9e5a8fe9921e860662ff84474899796a71b5e58304233f0e7f7cadfe14",
+    "bytes": 2885
+  },
+  "artifact": {
+    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/topic-07.html",
+    "sha256": "3cc076fbc6d9709286a6871b0faf26cb07f71eff443fe2fc96299e639d96f4ac",
+    "bytes": 516994
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/topic-07.finalize.json",
+    "summaryReceipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/topic-07.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-21T10:30:18.630Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 813,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

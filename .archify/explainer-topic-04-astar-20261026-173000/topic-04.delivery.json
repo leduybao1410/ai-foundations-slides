@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "4c4def28-d3b8-4b36-ad1e-39a4d622f273",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/candidate.archify.md",
+  "output": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.html",
+  "specification": {
+    "sha256": "1b353464891d93307f075efbd0e78c5c028b49517618495d5bab05313a975b7b",
+    "bytes": 3391
+  },
+  "artifact": {
+    "sha256": "d2718b7a45b433fd244b1b76562aa6b3ac40f744716a4fe34aa5e1298fa66f46",
+    "bytes": 537949
+  },
+  "explainer": {
+    "preparedSha256": "5e1e783c38ba267c459e0bceb37b3f19e10f1d77b6cee0f42040cdc5abf745b1",
+    "dependencies": [
+      {
+        "kind": "diagram-spec",
+        "id": "astar-map",
+        "inline": true,
+        "sha256": "7166e3816675c5be6c535df71aa2c8d9f39c6193ac29f389005c141749efb199",
+        "bytes": 1072
+      }
+    ]
+  }
+}

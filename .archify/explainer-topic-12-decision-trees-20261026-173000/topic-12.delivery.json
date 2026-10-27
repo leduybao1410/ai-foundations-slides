@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "60cc1f07-b911-4216-be1c-ee3085d37b87",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md",
+  "output": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.html",
+  "specification": {
+    "sha256": "a6ea4869c8206a3ed710dd77d1bb8e4a26a0b1ecec8b35294304646cbce2eeab",
+    "bytes": 2944
+  },
+  "artifact": {
+    "sha256": "514ff211b7e717d53afde9146cd69cc85a9f03922cd03c0226ea84b267ef6f06",
+    "bytes": 549783
+  },
+  "explainer": {
+    "preparedSha256": "800d558f4733479399c553753f3e4ce25f659b24783db1fcdfb809dfdc9d57f4",
+    "dependencies": [
+      {
+        "kind": "diagram-spec",
+        "id": "id3-tree",
+        "inline": true,
+        "sha256": "a6bb9ee0680a5723dd35731a6fb92f896871228e64363cfc4ffd2969d8099c64",
+        "bytes": 1536
+      }
+    ]
+  }
+}

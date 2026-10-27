@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "750810f3-dec1-4e28-bcfa-c7a0d59dc45e",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
+  "output": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
+  "specification": {
+    "sha256": "d08bd968f77f1d18446082fc4846d23ccd8daf17b27881b3e6bcc91317580e16",
+    "bytes": 3407
+  },
+  "artifact": {
+    "sha256": "1582b301695dc77f4f8ac3b6ef8bee2ffdf9f7808f7a96397125a602229d3e18",
+    "bytes": 552134
+  },
+  "explainer": {
+    "preparedSha256": "c55ba7b6c0413ee608f6fa06d5fb43abb910006697d04eb023aa42fc40ad4a84",
+    "dependencies": [
+      {
+        "kind": "diagram-spec",
+        "id": "bayes-pipeline",
+        "inline": true,
+        "sha256": "64d2e23228786748ea2f0cf2767799c96d4c5eb9ee66c08a7a41fcd6be2e71a5",
+        "bytes": 1517
+      }
+    ]
+  }
+}

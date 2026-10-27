@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "7018c5ff-dfb1-49de-9491-d04591a4c579",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-minimax-20261026-173000/candidate.archify.md",
+  "output": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-minimax-20261026-173000/topic-05.html",
+  "specification": {
+    "sha256": "4900260fa8bbca9861ec7e75a9a3e81fba6f460ca9244f35bd79db09233fee12",
+    "bytes": 3508
+  },
+  "artifact": {
+    "sha256": "c46f2c5ca9ed36517a25cb0dd1f036e99ca9365aa1513aed73e3008146146c88",
+    "bytes": 586730
+  },
+  "explainer": {
+    "preparedSha256": "ce8229284a70a23fe7fc9a9052f7b7298547be8126f1dbdf7a8445357844ffc0",
+    "dependencies": [
+      {
+        "kind": "diagram-spec",
+        "id": "minimax-tree",
+        "inline": true,
+        "sha256": "34ecc2498a05a41461fce652ac354add855a28e88e841a4e0058295426644291",
+        "bytes": 2295
+      }
+    ]
+  }
+}

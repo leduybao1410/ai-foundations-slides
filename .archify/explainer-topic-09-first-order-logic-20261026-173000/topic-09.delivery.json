@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "317fdbf4-9e34-4879-9a67-bef185f3d80e",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/candidate.archify.md",
+  "output": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/topic-09.html",
+  "specification": {
+    "sha256": "0d323b36116ec3e8dbec7e96e23bd676c2c852559826d18a4b3c5023b2dd8753",
+    "bytes": 3516
+  },
+  "artifact": {
+    "sha256": "aa45f7dda2238accad948f30fc6b2ce810b2d90cac7fb23e46e86bdf5a40bb99",
+    "bytes": 914996
+  },
+  "explainer": {
+    "preparedSha256": "8c6b297f741ff4fea0d953c1d911eae1fabf52a8b7e26c74b70010c0073ee3ef",
+    "dependencies": [
+      {
+        "kind": "diagram-spec",
+        "id": "fol-model",
+        "inline": true,
+        "sha256": "b8f4598c1a819480d2ceef28e3806c08c50a95430f0aca1a287aad16a27861c9",
+        "bytes": 1271
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "unification-diagram",
+        "inline": true,
+        "sha256": "949e225c3054bf429c318373fa50186a27e42c9e5186fbbe61d99cb62aadf626",
+        "bytes": 1056
+      }
+    ]
+  }
+}

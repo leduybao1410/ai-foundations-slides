@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "cac0e4a7-a19b-46e9-9146-3b7010f072bb",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-06-local-search-20261026-173000/candidate.archify.md",
+  "output": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-06-local-search-20261026-173000/topic-06.html",
+  "specification": {
+    "sha256": "463f849633461d06f53de01a56fe7e41d3a81280a962bcd1ab7e31061c9c547b",
+    "bytes": 5288
+  },
+  "artifact": {
+    "sha256": "2b239c046d793359a33c7cdc1c0fd9709208f92cffe1bc28fcc5a949fa1e4f4b",
+    "bytes": 1349091
+  },
+  "explainer": {
+    "preparedSha256": "d3975917f27613738a8814e618829785e1204a14c31cbeaecea84b02ee3d8e1e",
+    "dependencies": [
+      {
+        "kind": "diagram-spec",
+        "id": "hill-landscape",
+        "inline": true,
+        "sha256": "e66a12da0e9df0bf81f26c7bf3a50d6c792afd2bf2accdee54b9f9d9f5546f51",
+        "bytes": 1359
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "annealing",
+        "inline": true,
+        "sha256": "8780056800378119feaec2894173c8ec9d55ee87c7de815e962f56caa37f9309",
+        "bytes": 1947
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "ga-cycle",
+        "inline": true,
+        "sha256": "fbcadf7ea1ed287b643cc3f72179dff93c1aa1eaec29f5cc2537c19ecbdaebf0",
+        "bytes": 1861
+      }
+    ]
+  }
+}

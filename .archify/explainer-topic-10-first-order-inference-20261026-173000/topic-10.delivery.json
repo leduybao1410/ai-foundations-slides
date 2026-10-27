@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "41854b12-4208-4257-8dc4-c78bd435f5a2",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-10-first-order-inference-20261026-173000/candidate.archify.md",
+  "output": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-10-first-order-inference-20261026-173000/topic-10.html",
+  "specification": {
+    "sha256": "b136cfcb4bfcd0a9cff54294505cb5b45cd6596d819815697be8cbe3be22fad3",
+    "bytes": 3812
+  },
+  "artifact": {
+    "sha256": "6f7f3b5b1d4b94a425f0605d9775c7df4a4249bd9726bf6b47697a0cca71e251",
+    "bytes": 926823
+  },
+  "explainer": {
+    "preparedSha256": "23f9d5da5438a19ba782c1c791021175262e2df76c3a5f5cd1981b4481a10bcb",
+    "dependencies": [
+      {
+        "kind": "diagram-spec",
+        "id": "forward-family",
+        "inline": true,
+        "sha256": "037213a07f46fac66c28b9f18cb65c1e848d279f7d162b25e4d03870cee4adac",
+        "bytes": 1150
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "backward-family",
+        "inline": true,
+        "sha256": "3093e8cd3eac58a2f2eb92c7bff38f115e879ab3a5ceef84972172260c9c7f97",
+        "bytes": 1265
+      }
+    ]
+  }
+}
