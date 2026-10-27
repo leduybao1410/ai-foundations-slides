@@ -6,14 +6,14 @@
   "type": "explainer",
   "quality": "showcase",
   "specification": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/candidate.archify.md",
-    "sha256": "1b353464891d93307f075efbd0e78c5c028b49517618495d5bab05313a975b7b",
-    "bytes": 3391
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/candidate.archify.md",
+    "sha256": "2582c5bcbc513c0d9dff958b72c0da94db7905fd01a48bff1b1a83ce6012640f",
+    "bytes": 3749
   },
   "artifact": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.html",
-    "sha256": "d2718b7a45b433fd244b1b76562aa6b3ac40f744716a4fe34aa5e1298fa66f46",
-    "bytes": 537949
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.html",
+    "sha256": "d6d1be35130cdcfae4a131c9cfc3d93ccdf374a281bbdda42d9b192c39ac2470",
+    "bytes": 540076
   },
   "gates": {
     "validate": "pass",
@@ -28,8 +28,8 @@
     "truncated": false
   },
   "evidence": {
-    "receipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.finalize.json",
-    "summaryReceipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.finalize-summary.json"
+    "receipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.finalize.json",
+    "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.finalize-summary.json"
   },
   "update": {
     "status": "current",
@@ -42,7 +42,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 791,
+  "durationMs": 873,
   "browserCheck": {
     "requested": false,
     "ran": false

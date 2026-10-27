@@ -58,3 +58,7 @@ Unification tìm phép thế biến khiến hai biểu thức giống nhau. Ví 
 ## Ghi nhớ {#recap}
 
 FOL biểu diễn sự kiện và quan hệ có biến, nhưng suy dẫn phức tạp hơn do có nhiều thể hiện. Hợp giải FOL cần chuẩn hóa về clausal form, thay biến đúng cách và unification.[](source:slides09)
+
+## Thử thách luyện tập: Ghép luật với đối tượng {#challenge-practice}
+
+Đọc lượng từ và tìm phép thế cho vị từ. Bấm “Chơi thử thách” bên dưới để hoàn thành ba bước và nhận phản hồi. Đây là ví dụ diễn giải thêm; dữ kiện của trò chơi được đặt riêng cho việc luyện tập.

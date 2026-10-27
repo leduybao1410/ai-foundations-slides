@@ -37,3 +37,7 @@ Tìm kiếm cục bộ tối ưu **trạng thái cuối**, không tối ưu đư
 ## Nguồn slide
 
 [Topic 06, hill climbing](<../../Topic 06 - Tìm kiếm leo đồi và các dạng khác.pdf#page=4>) · local search: slides 14–18 · GA: slides 19–34.
+
+## Thử thách luyện tập
+
+[Leo đồi và tiến hóa](../../lessons/challenge.html?topic=topic-06): Tìm hàng xóm tốt hơn, nhận diện điểm kẹt và sắp xếp vòng tiến hóa. Các tình huống và số liệu trong trò chơi là ví dụ diễn giải thêm; kiến thức liên quan: Topic 06 · slides 4–5, 19–27.

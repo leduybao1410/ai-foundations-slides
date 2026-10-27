@@ -8,6 +8,7 @@
 | [AI-MEMORY-GUIDELINES.md](AI-MEMORY-GUIDELINES.md) | Cách truy xuất, trả lời và cập nhật ghi chú |
 | [lesson manifest](../lessons/manifest.json) | 12 bài Archify, đầu ra local, ghi chú và trang PDF nguồn |
 | [lesson index](../lessons/index.html) | Mục lục offline tới minh họa, ghi chú và PDF |
+| [thử thách luyện tập](../lessons/index.html) | 12 thử thách theo topic, điểm và tiến độ lưu trên trình duyệt |
 | [topic-01-introduction.md](topics/topic-01-introduction.md) | AI, bốn quan điểm, tác nhân, lịch sử và ứng dụng |
 | [topic-02-03-search.md](topics/topic-02-03-search.md) | Mô hình bài toán tìm kiếm, DFS, BFS, UCS và tìm kiếm mù |
 | [topic-04-heuristic-a-star.md](topics/topic-04-heuristic-a-star.md) | Heuristic, Greedy, A*, admissibility và IDA* |

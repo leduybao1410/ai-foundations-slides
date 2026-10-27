@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "receiptId": "60cc1f07-b911-4216-be1c-ee3085d37b87",
+  "receiptId": "cf88b49a-923b-4fba-9b9c-e913466499a9",
   "status": "current",
   "command": "deliver",
   "type": "explainer",
-  "input": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md",
-  "output": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.html",
+  "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md",
+  "output": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.html",
   "specification": {
-    "sha256": "a6ea4869c8206a3ed710dd77d1bb8e4a26a0b1ecec8b35294304646cbce2eeab",
-    "bytes": 2944
+    "sha256": "b386c9fb6b5c38752b19918d5bcba3c2b690582cb128cecbed1015163f29bb19",
+    "bytes": 3297
   },
   "artifact": {
-    "sha256": "514ff211b7e717d53afde9146cd69cc85a9f03922cd03c0226ea84b267ef6f06",
-    "bytes": 549783
+    "sha256": "5c2a9ea8167a47f19ab38fe7474d26177a8479bcf02692ebde875c938cf28fdf",
+    "bytes": 551896
   },
   "explainer": {
-    "preparedSha256": "800d558f4733479399c553753f3e4ce25f659b24783db1fcdfb809dfdc9d57f4",
+    "preparedSha256": "cefc757aa7191dc8c4a9b4421be04830f702c2162c5b65a1f8c29b6c0fa61261",
     "dependencies": [
       {
         "kind": "diagram-spec",

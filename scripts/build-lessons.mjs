@@ -36,11 +36,13 @@ function renderIndex(manifest) {
       <div class="cards">${lessons.map(lesson => {
         const pdfPage = `#page=${lesson.sourcePages[0]}`;
         return `
-          <article class="lesson">
+          <article class="lesson" data-lesson-id="${escapeHtml(lesson.id)}">
             <div class="lesson-top"><span class="topic">Topic ${escapeHtml(lesson.topic)}</span><span class="arrow" aria-hidden="true">↗</span></div>
             <h3><a href="${escapeHtml(localHref('lessons', lesson.output))}">${escapeHtml(lesson.title)}</a></h3>
             <p>${escapeHtml(lesson.summary)}</p>
+            <p class="challenge-status">Đang tải tiến độ…</p>
             <div class="links">
+              <a href="challenge.html?topic=${encodeURIComponent(lesson.id)}">Chơi thử thách →</a>
               <a href="${escapeHtml(localHref('lessons', lesson.note))}">Ghi chú RAG</a>
               <a href="${escapeHtml(localHref('lessons', lesson.sourcePdf, pdfPage))}">PDF · slide ${lesson.sourcePages[0]}–${lesson.sourcePages[1]}</a>
             </div>
@@ -54,6 +56,8 @@ function renderIndex(manifest) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(manifest.title)}</title>
+  <script defer src="challenge-core.js"></script>
+  <script defer src="index-progress.js"></script>
   <style>
     :root { color-scheme: light; --ink:#192d36; --muted:#5c7078; --line:#dce6e7; --accent:#0a706b; --paper:#f4f8f7; }
     * { box-sizing:border-box; }
@@ -76,6 +80,7 @@ function renderIndex(manifest) {
     h3 a { color:var(--ink); text-decoration:none; }
     h3 a:hover { color:var(--accent); text-decoration:underline; text-underline-offset:3px; }
     .lesson p { min-height:48px; margin:0; color:var(--muted); font-size:14px; }
+    .lesson p.challenge-status { min-height:0; margin-top:12px; color:#075e59; font-weight:700; }
     .links { display:flex; flex-wrap:wrap; gap:9px 16px; margin-top:18px; padding-top:13px; border-top:1px solid #edf1f1; }
     .links a { color:var(--accent); font-size:13px; font-weight:650; text-decoration:none; }
     .links a:hover { text-decoration:underline; text-underline-offset:3px; }
@@ -89,7 +94,7 @@ function renderIndex(manifest) {
       <p class="eyebrow">Bộ học liệu · bản local</p>
       <h1>${escapeHtml(manifest.title)}</h1>
       <p>Mở một topic, bấm qua ví dụ theo từng bước, rồi quay lại ghi chú hoặc trang slide tương ứng.</p>
-      <div class="stats"><span>${manifest.lessons.length} bài minh họa</span><span>Tiếng Việt · kèm thuật ngữ English</span><span>Mở được khi không có mạng</span></div>
+      <div class="stats"><span>${manifest.lessons.length} bài minh họa</span><span id="challenge-summary" aria-live="polite">Đang tải tiến độ…</span><span>Mở được khi không có mạng</span></div>
     </header>
     ${sections}
     <footer>Các bài minh họa là ví dụ học tập gắn với slide nguồn. Số liệu minh họa được ghi rõ trong từng bài.</footer>
@@ -127,6 +132,12 @@ for (const lesson of manifest.lessons) {
     const details = [result.stderr, result.stdout].filter(Boolean).join('\n').slice(-7000);
     throw new Error(`Archify failed for Topic ${lesson.topic} (exit ${result.status ?? 'unknown'}).\n${details}`);
   }
+  const generated = await readFile(output, 'utf8');
+  const anchor = '</main><footer>';
+  if (generated.split(anchor).length !== 2) throw new Error(`Cannot locate a unique lesson footer for ${lesson.id}`);
+  const challengeHref = `${localHref(path.dirname(lesson.output), 'lessons/challenge.html')}?topic=${encodeURIComponent(lesson.id)}`;
+  const challengeCta = `<section aria-label="Thử thách luyện tập" style="margin:24px auto;padding:22px;max-width:1000px;border:1px solid #b9d9d0;border-radius:16px;background:#edf8f3;color:#153a42;font-family:system-ui,sans-serif"><h2 style="margin:0 0 8px">Sẵn sàng thử sức?</h2><p>Áp dụng kiến thức qua ba bước, nhận phản hồi và lưu điểm cao nhất trên trình duyệt này.</p><a href="${escapeHtml(challengeHref)}" style="display:inline-block;padding:12px 18px;border-radius:10px;background:#086c64;color:white;font-weight:700;text-decoration:none">Chơi thử thách →</a></section>`;
+  await writeFile(output, generated.replace(anchor, `${challengeCta}${anchor}`), 'utf8');
   const record = { id: lesson.id, output: lesson.output, stdout: result.stdout.trim() };
   built.push(record);
   process.stdout.write(`Built Topic ${lesson.topic}: ${path.relative(repoRoot, output)}\n`);
@@ -137,6 +148,12 @@ for (const lesson of manifest.lessons) {
   catch { throw new Error(`Archify reported success but did not create ${lesson.output}.`); }
 }
 await writeFile(indexPath, renderIndex(manifest), 'utf8');
+const catalog = manifest.lessons.map(lesson => ({
+  id: lesson.id, topic: lesson.topic, title: lesson.title,
+  output: localHref('lessons', lesson.output),
+  source: localHref('lessons', lesson.sourcePdf),
+}));
+await writeFile(path.join(repoRoot, 'lessons', 'lesson-catalog.js'), `window.LessonCatalog = ${JSON.stringify(catalog, null, 2)};\n`, 'utf8');
 const receipt = {
   generatedAt: new Date().toISOString(),
   archifyRoot,

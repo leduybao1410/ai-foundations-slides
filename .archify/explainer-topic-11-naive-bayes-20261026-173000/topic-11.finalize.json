@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-26T10:56:51.607Z",
+  "startedAt": "2026-10-27T16:42:54.033Z",
   "specification": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
-    "sha256": "d08bd968f77f1d18446082fc4846d23ccd8daf17b27881b3e6bcc91317580e16",
-    "bytes": 3407
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
+    "sha256": "5ea97d4ee1272f9cfdd27f674ebd2d07b445148500f9511cbf7524e82c5877a0",
+    "bytes": 3794
   },
   "artifact": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
-    "sha256": "1582b301695dc77f4f8ac3b6ef8bee2ffdf9f7808f7a96397125a602229d3e18",
-    "bytes": 552134
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
+    "sha256": "b2f2a38972c349f8c3c3dd31fa171d8cc360cd144cbbb297f25fd3f062877cef",
+    "bytes": 554359
   },
   "stages": {
     "browser-check": {
@@ -31,8 +31,8 @@
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
         "deliver",
         "explainer",
-        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
-        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
+        "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
+        "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
         "--quality",
         "showcase",
         "--json"
@@ -42,8 +42,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "d08bd968f77f1d18446082fc4846d23ccd8daf17b27881b3e6bcc91317580e16",
-          "bytes": 3407
+          "sha256": "5ea97d4ee1272f9cfdd27f674ebd2d07b445148500f9511cbf7524e82c5877a0",
+          "bytes": 3794
         },
         "validation": {
           "checksPassed": 4,
@@ -58,28 +58,28 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 457,
+      "durationMs": 459,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
         "deliver",
         "explainer",
-        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
-        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
+        "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
+        "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
         "--quality",
         "showcase",
         "--json"
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "750810f3-dec1-4e28-bcfa-c7a0d59dc45e",
+        "receiptId": "f68b4401-995a-40b4-8eeb-2432e9128e7d",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
-        "input": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
-        "output": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
+        "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
+        "output": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
         "explainer": {
-          "preparedSha256": "c55ba7b6c0413ee608f6fa06d5fb43abb910006697d04eb023aa42fc40ad4a84",
+          "preparedSha256": "1722f8cd063b0e4d21f3fcb29c36be0c3730b41b70eef7b9ed68a8f7f1eb9b77",
           "dependencies": [
             {
               "kind": "diagram-spec",
@@ -91,12 +91,12 @@
           ]
         },
         "specification": {
-          "sha256": "d08bd968f77f1d18446082fc4846d23ccd8daf17b27881b3e6bcc91317580e16",
-          "bytes": 3407
+          "sha256": "5ea97d4ee1272f9cfdd27f674ebd2d07b445148500f9511cbf7524e82c5877a0",
+          "bytes": 3794
         },
         "artifact": {
-          "sha256": "1582b301695dc77f4f8ac3b6ef8bee2ffdf9f7808f7a96397125a602229d3e18",
-          "bytes": 552134
+          "sha256": "b2f2a38972c349f8c3c3dd31fa171d8cc360cd144cbbb297f25fd3f062877cef",
+          "bytes": 554359
         },
         "validation": {
           "checksPassed": 4,
@@ -122,28 +122,28 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 209,
+      "durationMs": 217,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
         "check",
-        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
+        "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
         "--require-provenance"
       ],
       "receipt": {
         "ok": true,
-        "file": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
+        "file": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "1582b301695dc77f4f8ac3b6ef8bee2ffdf9f7808f7a96397125a602229d3e18",
-          "bytes": 552134
+          "sha256": "b2f2a38972c349f8c3c3dd31fa171d8cc360cd144cbbb297f25fd3f062877cef",
+          "bytes": 554359
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "50 unique DOM IDs"
+              "52 unique DOM IDs"
             ]
           },
           {
@@ -180,7 +180,7 @@
               "id": "bayes-pipeline",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-1aKuCM/child.html",
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-37FBU1/child.html",
                 "artifact": {
                   "sha256": "c3455470635f76e47f67ca699e56ad936df8ea31091b198c9b1b52450e5bc702",
                   "bytes": 833842
@@ -307,7 +307,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "750810f3-dec1-4e28-bcfa-c7a0d59dc45e"
+        "deliveryReceiptId": "f68b4401-995a-40b4-8eeb-2432e9128e7d"
       }
     }
   },
@@ -317,12 +317,12 @@
   },
   "diagnostics": [],
   "evidence": {
-    "receipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.finalize.json",
-    "summaryReceipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.finalize-summary.json"
+    "receipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.finalize.json",
+    "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-26T10:56:52.398Z",
-  "durationMs": 791,
+  "finishedAt": "2026-10-27T16:42:54.837Z",
+  "durationMs": 804,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

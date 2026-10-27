@@ -81,3 +81,7 @@ GA giữ một quần thể lời giải. Mỗi vòng đánh giá fitness, chọ
 ## Dễ nhầm {#compare}
 
 Hill climbing đi đến láng giềng tốt hơn và dừng khi bị kẹt. Simulated annealing có thể nhận bước xấu. Genetic algorithm tiến hóa quần thể thay vì một cấu hình đơn. Các phương pháp này tìm cấu hình tốt; đường đi đến đó không phải mục tiêu.[](source:slides06)
+
+## Thử thách luyện tập: Leo đồi và tiến hóa {#challenge-practice}
+
+Tìm hàng xóm tốt hơn, nhận diện điểm kẹt và sắp xếp vòng tiến hóa. Bấm “Chơi thử thách” bên dưới để hoàn thành ba bước và nhận phản hồi. Đây là ví dụ diễn giải thêm; dữ kiện của trò chơi được đặt riêng cho việc luyện tập.

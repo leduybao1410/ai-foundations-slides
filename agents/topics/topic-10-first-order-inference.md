@@ -37,3 +37,7 @@ Resolution là chứng minh bằng clause và phản chứng; chaining làm vi�
 ## Nguồn slide
 
 [Topic 10, hợp giải FOL](<../../Topic 10 - Suy diễn với logic bậc nhất.pdf#page=3>) · forward chaining: slides 11–16 · backward chaining: slides 17–21.
+
+## Thử thách luyện tập
+
+[Truy tìm kết luận](../../lessons/challenge.html?topic=topic-10): Áp dụng phép thế và suy diễn tiến trên luật Horn. Các tình huống và số liệu trong trò chơi là ví dụ diễn giải thêm; kiến thức liên quan: Topic 10 · slides 3–4, 11–20.

@@ -38,3 +38,7 @@ Logic mệnh đề chỉ xem một câu nguyên vẹn là đúng hoặc sai. Log
 ## Nguồn slide
 
 [Topic 09, cú pháp và lượng từ](<../../Topic 09 - Logic bậc nhất.pdf#page=5>) · dạng mệnh đề: slides 16–19 · substitution/unification: slides 21–28.
+
+## Thử thách luyện tập
+
+[Ghép luật với đối tượng](../../lessons/challenge.html?topic=topic-09): Đọc lượng từ và tìm phép thế cho vị từ. Các tình huống và số liệu trong trò chơi là ví dụ diễn giải thêm; kiến thức liên quan: Topic 09 · slides 5–12, 21–28.

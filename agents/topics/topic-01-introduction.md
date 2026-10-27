@@ -37,3 +37,7 @@ Máy đọc nhiệt độ phòng, so sánh với nhiệt độ mục tiêu rồi
 ## Nguồn slide
 
 [Topic 01, slides 5–11](<../../Topic 01 - Giới thiệu.pdf#page=5>) · Lịch sử và ứng dụng: slides 18–34 · Bản đồ môn học: slides 37–39.
+
+## Thử thách luyện tập
+
+[Điều khiển căn phòng](../../lessons/challenge.html?topic=topic-01): Giúp máy điều nhiệt trở thành một tác nhân hợp lý. Các tình huống và số liệu trong trò chơi là ví dụ diễn giải thêm; kiến thức liên quan: Topic 01 · slides 5–9.

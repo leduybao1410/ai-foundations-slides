@@ -44,3 +44,7 @@ Minimax có thể bi quan nếu đối thủ không chơi tối ưu. Expectimax 
 Ở MIN node, một kết quả đủ thấp có thể chứng minh phần còn lại không đổi quyết định MAX. Ở chance node, nhánh chưa xét vẫn có thể làm thay đổi trung bình, nên alpha-beta không áp dụng nguyên trạng. Cây có cả MAX, MIN và chance được gọi là expectiminimax.[](source:slides051)
 
 **Điều cần nhớ:** `min` mô hình hóa đối thủ tối ưu; phép kỳ vọng mô hình hóa kết quả ngẫu nhiên đã biết xác suất.
+
+## Thử thách luyện tập: Chọn nước đi có may rủi {#challenge-practice}
+
+Tính kỳ vọng ở nút chance rồi để MAX chọn. Bấm “Chơi thử thách” bên dưới để hoàn thành ba bước và nhận phản hồi. Đây là ví dụ diễn giải thêm; dữ kiện của trò chơi được đặt riêng cho việc luyện tập.

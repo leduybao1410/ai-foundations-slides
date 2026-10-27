@@ -6,14 +6,14 @@
   "type": "explainer",
   "quality": "showcase",
   "specification": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-08-resolution-20261026-173000/candidate.archify.md",
-    "sha256": "3c6feb98bf445eabedd4d796ea5b9ac041a8f03812fba9fd33e422f7ab9275e5",
-    "bytes": 2795
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-08-resolution-20261026-173000/candidate.archify.md",
+    "sha256": "b79f33777c31ebc65c5fc48a864be896e0b069806b77ec914884fb9987819b16",
+    "bytes": 3149
   },
   "artifact": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-08-resolution-20261026-173000/topic-08.html",
-    "sha256": "30771ceedd657794aeb166a00a03c74d0b5a902d6c48e8780369b815124e2a10",
-    "bytes": 552963
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-08-resolution-20261026-173000/topic-08.html",
+    "sha256": "3ff14777c971b8e0b8cc9e8d72ee97b3aa186c6e23202e1b39f647a94267e6e2",
+    "bytes": 555089
   },
   "gates": {
     "validate": "pass",
@@ -28,8 +28,8 @@
     "truncated": false
   },
   "evidence": {
-    "receipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-08-resolution-20261026-173000/topic-08.finalize.json",
-    "summaryReceipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-08-resolution-20261026-173000/topic-08.finalize-summary.json"
+    "receipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-08-resolution-20261026-173000/topic-08.finalize.json",
+    "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-08-resolution-20261026-173000/topic-08.finalize-summary.json"
   },
   "update": {
     "status": "current",
@@ -42,7 +42,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 804,
+  "durationMs": 808,
   "browserCheck": {
     "requested": false,
     "ran": false

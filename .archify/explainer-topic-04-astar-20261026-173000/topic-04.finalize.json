@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-26T10:56:39.716Z",
+  "startedAt": "2026-10-27T16:42:41.708Z",
   "specification": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/candidate.archify.md",
-    "sha256": "1b353464891d93307f075efbd0e78c5c028b49517618495d5bab05313a975b7b",
-    "bytes": 3391
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/candidate.archify.md",
+    "sha256": "2582c5bcbc513c0d9dff958b72c0da94db7905fd01a48bff1b1a83ce6012640f",
+    "bytes": 3749
   },
   "artifact": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.html",
-    "sha256": "d2718b7a45b433fd244b1b76562aa6b3ac40f744716a4fe34aa5e1298fa66f46",
-    "bytes": 537949
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.html",
+    "sha256": "d6d1be35130cdcfae4a131c9cfc3d93ccdf374a281bbdda42d9b192c39ac2470",
+    "bytes": 540076
   },
   "stages": {
     "browser-check": {
@@ -31,8 +31,8 @@
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
         "deliver",
         "explainer",
-        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/candidate.archify.md",
-        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.html",
+        "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/candidate.archify.md",
+        "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.html",
         "--quality",
         "showcase",
         "--json"
@@ -42,8 +42,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "1b353464891d93307f075efbd0e78c5c028b49517618495d5bab05313a975b7b",
-          "bytes": 3391
+          "sha256": "2582c5bcbc513c0d9dff958b72c0da94db7905fd01a48bff1b1a83ce6012640f",
+          "bytes": 3749
         },
         "validation": {
           "checksPassed": 4,
@@ -58,28 +58,28 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 459,
+      "durationMs": 506,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
         "deliver",
         "explainer",
-        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/candidate.archify.md",
-        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.html",
+        "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/candidate.archify.md",
+        "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.html",
         "--quality",
         "showcase",
         "--json"
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "4c4def28-d3b8-4b36-ad1e-39a4d622f273",
+        "receiptId": "aa6714c9-d4b6-4c48-a677-c7251c2bdd74",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
-        "input": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/candidate.archify.md",
-        "output": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.html",
+        "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/candidate.archify.md",
+        "output": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.html",
         "explainer": {
-          "preparedSha256": "5e1e783c38ba267c459e0bceb37b3f19e10f1d77b6cee0f42040cdc5abf745b1",
+          "preparedSha256": "f284c1cfe133b78d43a8a68625110029393da8c72be49415c37c05a3ea22aa12",
           "dependencies": [
             {
               "kind": "diagram-spec",
@@ -91,12 +91,12 @@
           ]
         },
         "specification": {
-          "sha256": "1b353464891d93307f075efbd0e78c5c028b49517618495d5bab05313a975b7b",
-          "bytes": 3391
+          "sha256": "2582c5bcbc513c0d9dff958b72c0da94db7905fd01a48bff1b1a83ce6012640f",
+          "bytes": 3749
         },
         "artifact": {
-          "sha256": "d2718b7a45b433fd244b1b76562aa6b3ac40f744716a4fe34aa5e1298fa66f46",
-          "bytes": 537949
+          "sha256": "d6d1be35130cdcfae4a131c9cfc3d93ccdf374a281bbdda42d9b192c39ac2470",
+          "bytes": 540076
         },
         "validation": {
           "checksPassed": 4,
@@ -122,28 +122,28 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 208,
+      "durationMs": 222,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
         "check",
-        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.html",
+        "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.html",
         "--require-provenance"
       ],
       "receipt": {
         "ok": true,
-        "file": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.html",
+        "file": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "d2718b7a45b433fd244b1b76562aa6b3ac40f744716a4fe34aa5e1298fa66f46",
-          "bytes": 537949
+          "sha256": "d6d1be35130cdcfae4a131c9cfc3d93ccdf374a281bbdda42d9b192c39ac2470",
+          "bytes": 540076
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "46 unique DOM IDs"
+              "48 unique DOM IDs"
             ]
           },
           {
@@ -180,7 +180,7 @@
               "id": "astar-map",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-Jd8938/child.html",
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-7N1fWn/child.html",
                 "artifact": {
                   "sha256": "10a234c2bfa4640020505dcc8348ca7b0bab0e29b6eedecb6890f1de682d6ff8",
                   "bytes": 832433
@@ -307,7 +307,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "4c4def28-d3b8-4b36-ad1e-39a4d622f273"
+        "deliveryReceiptId": "aa6714c9-d4b6-4c48-a677-c7251c2bdd74"
       }
     }
   },
@@ -317,12 +317,12 @@
   },
   "diagnostics": [],
   "evidence": {
-    "receipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.finalize.json",
-    "summaryReceipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.finalize-summary.json"
+    "receipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.finalize.json",
+    "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-26T10:56:40.507Z",
-  "durationMs": 791,
+  "finishedAt": "2026-10-27T16:42:42.582Z",
+  "durationMs": 873,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

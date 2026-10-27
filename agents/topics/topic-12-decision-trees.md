@@ -38,3 +38,7 @@ Entropy là độ hỗn tạp của nhãn, không phải độ chính xác. ID3 
 ## Nguồn slide
 
 [Topic 12, cây và ID3](<../../Topic 12 - Cây quyết định, học quy nạp.pdf#page=3>) · entropy và ví dụ chọn thuộc tính: slides 5–14 · luật và ILA: slides 15–26.
+
+## Thử thách luyện tập
+
+[Xây cây quyết định](../../lessons/challenge.html?topic=topic-12): Đo độ lẫn nhãn rồi chọn cách chia cho ID3. Các tình huống và số liệu trong trò chơi là ví dụ diễn giải thêm; kiến thức liên quan: Topic 12 · slides 5–14.

@@ -6,14 +6,14 @@
   "type": "explainer",
   "quality": "showcase",
   "specification": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-10-first-order-inference-20261026-173000/candidate.archify.md",
-    "sha256": "b136cfcb4bfcd0a9cff54294505cb5b45cd6596d819815697be8cbe3be22fad3",
-    "bytes": 3812
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-10-first-order-inference-20261026-173000/candidate.archify.md",
+    "sha256": "8c7c8a3f91e00041828e34f192684aa9b72d054586a94be1620189dfae6adcf6",
+    "bytes": 4171
   },
   "artifact": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-10-first-order-inference-20261026-173000/topic-10.html",
-    "sha256": "6f7f3b5b1d4b94a425f0605d9775c7df4a4249bd9726bf6b47697a0cca71e251",
-    "bytes": 926823
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-10-first-order-inference-20261026-173000/topic-10.html",
+    "sha256": "c6d1cb79f4b818c9491d8301617e2a699d3e3324c08420d0d89a8d6e5b4b3aba",
+    "bytes": 928946
   },
   "gates": {
     "validate": "pass",
@@ -28,8 +28,8 @@
     "truncated": false
   },
   "evidence": {
-    "receipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-10-first-order-inference-20261026-173000/topic-10.finalize.json",
-    "summaryReceipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-10-first-order-inference-20261026-173000/topic-10.finalize-summary.json"
+    "receipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-10-first-order-inference-20261026-173000/topic-10.finalize.json",
+    "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-10-first-order-inference-20261026-173000/topic-10.finalize-summary.json"
   },
   "update": {
     "status": "current",
@@ -42,7 +42,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 1048,
+  "durationMs": 1246,
   "browserCheck": {
     "requested": false,
     "ran": false

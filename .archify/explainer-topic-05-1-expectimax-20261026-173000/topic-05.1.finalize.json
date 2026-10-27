@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-26T10:56:42.397Z",
+  "startedAt": "2026-10-27T16:42:44.307Z",
   "specification": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/candidate.archify.md",
-    "sha256": "163e8c5c74afb0009f36002492c4a18465293fc1d2f52ee9060d13e232fcf387",
-    "bytes": 2975
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/candidate.archify.md",
+    "sha256": "f1d78557dbda5aa1e27bd075f020712892eb6e62092a3fd6b68b2e4f265e292e",
+    "bytes": 3338
   },
   "artifact": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/topic-05.1.html",
-    "sha256": "7020882a1ee1a9728e11315a262a41cd3985f2c4b0b2c7d93d403ba12470c767",
-    "bytes": 530282
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/topic-05.1.html",
+    "sha256": "9c5ea49397b045a115c93d3f542255c2a9fdfba08baa6a5aa69255685bded730",
+    "bytes": 532439
   },
   "stages": {
     "browser-check": {
@@ -31,8 +31,8 @@
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
         "deliver",
         "explainer",
-        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/candidate.archify.md",
-        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/topic-05.1.html",
+        "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/candidate.archify.md",
+        "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/topic-05.1.html",
         "--quality",
         "showcase",
         "--json"
@@ -42,8 +42,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "163e8c5c74afb0009f36002492c4a18465293fc1d2f52ee9060d13e232fcf387",
-          "bytes": 2975
+          "sha256": "f1d78557dbda5aa1e27bd075f020712892eb6e62092a3fd6b68b2e4f265e292e",
+          "bytes": 3338
         },
         "validation": {
           "checksPassed": 4,
@@ -58,28 +58,28 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 556,
+      "durationMs": 499,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
         "deliver",
         "explainer",
-        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/candidate.archify.md",
-        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/topic-05.1.html",
+        "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/candidate.archify.md",
+        "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/topic-05.1.html",
         "--quality",
         "showcase",
         "--json"
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "87f4fef3-91e4-4c10-b2b7-27f1e4cfc71b",
+        "receiptId": "5d105300-9684-4913-a0b3-95493878741a",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
-        "input": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/candidate.archify.md",
-        "output": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/topic-05.1.html",
+        "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/candidate.archify.md",
+        "output": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/topic-05.1.html",
         "explainer": {
-          "preparedSha256": "e54a379a1945da762e327b5b149abd93820f643f4a918cb3428860ba06605b29",
+          "preparedSha256": "fc268e37efb6ead5c3f847faee49a8da8c8134b6ef9bb41888186b02612f8588",
           "dependencies": [
             {
               "kind": "diagram-spec",
@@ -91,12 +91,12 @@
           ]
         },
         "specification": {
-          "sha256": "163e8c5c74afb0009f36002492c4a18465293fc1d2f52ee9060d13e232fcf387",
-          "bytes": 2975
+          "sha256": "f1d78557dbda5aa1e27bd075f020712892eb6e62092a3fd6b68b2e4f265e292e",
+          "bytes": 3338
         },
         "artifact": {
-          "sha256": "7020882a1ee1a9728e11315a262a41cd3985f2c4b0b2c7d93d403ba12470c767",
-          "bytes": 530282
+          "sha256": "9c5ea49397b045a115c93d3f542255c2a9fdfba08baa6a5aa69255685bded730",
+          "bytes": 532439
         },
         "validation": {
           "checksPassed": 4,
@@ -122,28 +122,28 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 205,
+      "durationMs": 238,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
         "check",
-        "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/topic-05.1.html",
+        "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/topic-05.1.html",
         "--require-provenance"
       ],
       "receipt": {
         "ok": true,
-        "file": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/topic-05.1.html",
+        "file": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/topic-05.1.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "7020882a1ee1a9728e11315a262a41cd3985f2c4b0b2c7d93d403ba12470c767",
-          "bytes": 530282
+          "sha256": "9c5ea49397b045a115c93d3f542255c2a9fdfba08baa6a5aa69255685bded730",
+          "bytes": 532439
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "37 unique DOM IDs"
+              "39 unique DOM IDs"
             ]
           },
           {
@@ -180,7 +180,7 @@
               "id": "expectimax-tree",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-WrUR0n/child.html",
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-YqtJlW/child.html",
                 "artifact": {
                   "sha256": "d94b0143b3aaacc21e9de4805bb125bd97cbb940b5511b739bbe3189283a6d4e",
                   "bytes": 831472
@@ -307,7 +307,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "87f4fef3-91e4-4c10-b2b7-27f1e4cfc71b"
+        "deliveryReceiptId": "5d105300-9684-4913-a0b3-95493878741a"
       }
     }
   },
@@ -317,12 +317,12 @@
   },
   "diagnostics": [],
   "evidence": {
-    "receipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/topic-05.1.finalize.json",
-    "summaryReceipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/topic-05.1.finalize-summary.json"
+    "receipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/topic-05.1.finalize.json",
+    "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-1-expectimax-20261026-173000/topic-05.1.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-26T10:56:43.300Z",
-  "durationMs": 903,
+  "finishedAt": "2026-10-27T16:42:45.194Z",
+  "durationMs": 887,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

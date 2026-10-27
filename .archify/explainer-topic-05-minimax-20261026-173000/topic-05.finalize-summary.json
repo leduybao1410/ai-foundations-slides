@@ -6,14 +6,14 @@
   "type": "explainer",
   "quality": "showcase",
   "specification": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-minimax-20261026-173000/candidate.archify.md",
-    "sha256": "4900260fa8bbca9861ec7e75a9a3e81fba6f460ca9244f35bd79db09233fee12",
-    "bytes": 3508
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-minimax-20261026-173000/candidate.archify.md",
+    "sha256": "3f876bbcd15170f48b7c26643ef1f673f067829e15915c28b3da8f31cd0e5f8d",
+    "bytes": 3880
   },
   "artifact": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-minimax-20261026-173000/topic-05.html",
-    "sha256": "c46f2c5ca9ed36517a25cb0dd1f036e99ca9365aa1513aed73e3008146146c88",
-    "bytes": 586730
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-minimax-20261026-173000/topic-05.html",
+    "sha256": "f1dae7dba20d4ba728c28a28e250c939e430f802399260188c4d0dda10c796b0",
+    "bytes": 588888
   },
   "gates": {
     "validate": "pass",
@@ -28,8 +28,8 @@
     "truncated": false
   },
   "evidence": {
-    "receipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-minimax-20261026-173000/topic-05.finalize.json",
-    "summaryReceipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-minimax-20261026-173000/topic-05.finalize-summary.json"
+    "receipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-minimax-20261026-173000/topic-05.finalize.json",
+    "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-05-minimax-20261026-173000/topic-05.finalize-summary.json"
   },
   "update": {
     "status": "current",
@@ -42,7 +42,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 995,
+  "durationMs": 853,
   "browserCheck": {
     "requested": false,
     "ran": false

@@ -57,3 +57,7 @@ Heuristic admissible thỏa `h(n) ≤ h*(n)`: ước lượng không vượt chi
 | A-star | `g(n)+h(n)` | Có thể tối ưu với heuristic phù hợp; tốn bộ nhớ |
 
 `IDA*` giảm bộ nhớ bằng cách lặp tìm kiếm DFS với ngưỡng `f`; nó có thể duyệt lại trạng thái ở vòng sau.[](source:slides04)
+
+## Thử thách luyện tập: Dẫn đường với A\* {#challenge-practice}
+
+Tính f = g + h và chọn nút tiếp theo trong frontier. Bấm “Chơi thử thách” bên dưới để hoàn thành ba bước và nhận phản hồi. Đây là ví dụ diễn giải thêm; dữ kiện của trò chơi được đặt riêng cho việc luyện tập.

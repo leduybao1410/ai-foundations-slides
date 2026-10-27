@@ -37,3 +37,7 @@ Cho `P⇒Q` (nếu trời mưa thì đường ướt) và `P` (trời mưa). Ta 
 ## Nguồn slide
 
 [Topic 07, cú pháp và ngữ nghĩa](<../../Topic 07 - Logic - Logic mệnh đề.pdf#page=5>) · suy dẫn và chứng minh: slides 20–25 · ví dụ chứng minh: slides 26–34.
+
+## Thử thách luyện tập
+
+[Phòng thí nghiệm mệnh đề](../../lessons/challenge.html?topic=topic-07): Kiểm tra phép kéo theo và rút kết luận từ dữ kiện. Các tình huống và số liệu trong trò chơi là ví dụ diễn giải thêm; kiến thức liên quan: Topic 07 · slides 7–12, 23–25.

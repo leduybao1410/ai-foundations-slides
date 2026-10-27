@@ -39,3 +39,7 @@ BFS ưu tiên **số bước**; UCS ưu tiên **tổng chi phí**. Chúng chỉ 
 ## Nguồn slide
 
 [Topic 02_03, bài toán và biểu diễn](<../../Topic 02_03 - Bài toán tìm kiếm - Tìm kiếm mù.pdf#page=11>) · DFS: slides 24–32 · BFS: slides 34–50 · UCS: slides 52–74 · đánh giá: slides 80–82.
+
+## Thử thách luyện tập
+
+[Điều phối hàng đợi tìm kiếm](../../lessons/challenge.html?topic=topic-02-03): Chọn cách mở rộng và tính chi phí trên một đồ thị nhỏ. Các tình huống và số liệu trong trò chơi là ví dụ diễn giải thêm; kiến thức liên quan: Topic 02_03 · slides 34–35, 52–74.

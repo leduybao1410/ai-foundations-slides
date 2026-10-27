@@ -6,14 +6,14 @@
   "type": "explainer",
   "quality": "showcase",
   "specification": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/candidate.archify.md",
-    "sha256": "827bb1ca55e322d1c59cdd1f86615036344f31f61d43d1e614903a614cc14397",
-    "bytes": 3947
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/candidate.archify.md",
+    "sha256": "cd45d0d0edb3bed226403ce5b5df141457aa132e1792bc940db2676f8c07472d",
+    "bytes": 4334
   },
   "artifact": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/topic-02-03.html",
-    "sha256": "50cf408b21aef507679df039606c7274f8e039c0bb7ef898000e0b5cfc047b57",
-    "bytes": 545193
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/topic-02-03.html",
+    "sha256": "7b39d5d8e714f74c3c12ac94db1aa46a9c8c44ba89e9fc6b18127cbcc6b60981",
+    "bytes": 547434
   },
   "gates": {
     "validate": "pass",
@@ -28,8 +28,8 @@
     "truncated": false
   },
   "evidence": {
-    "receipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/topic-02-03.finalize.json",
-    "summaryReceipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/topic-02-03.finalize-summary.json"
+    "receipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/topic-02-03.finalize.json",
+    "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/topic-02-03.finalize-summary.json"
   },
   "update": {
     "status": "current",
@@ -42,7 +42,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 801,
+  "durationMs": 900,
   "browserCheck": {
     "requested": false,
     "ran": false

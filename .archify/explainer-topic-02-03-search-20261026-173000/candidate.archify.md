@@ -66,3 +66,7 @@ UCS lấy khỏi hàng đợi ưu tiên trạng thái có chi phí tích lũy nh
 | UCS | Chi phí tích lũy thấp nhất | 3 cạnh, chi phí 5 |
 
 BFS tối ưu khi mọi bước cùng chi phí; khi chi phí khác nhau, UCS tối ưu theo tổng chi phí. Luôn kiểm tra tiêu chí trước khi gọi một lời giải là tối ưu.[](source:slides0203)
+
+## Thử thách luyện tập: Điều phối hàng đợi tìm kiếm {#challenge-practice}
+
+Chọn cách mở rộng và tính chi phí trên một đồ thị nhỏ. Bấm “Chơi thử thách” bên dưới để hoàn thành ba bước và nhận phản hồi. Đây là ví dụ diễn giải thêm; dữ kiện của trò chơi được đặt riêng cho việc luyện tập.

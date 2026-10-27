@@ -46,3 +46,7 @@ Ví dụ giải thích thêm: nếu `P⇒Q` và P đều đúng thì không th�
 ## Ghi nhớ {#recap}
 
 Logic gồm cú pháp, ngữ nghĩa và hệ chứng minh. Bảng chân trị có thể kiểm tra suy dẫn nhưng n biến có `2^n` cách gán; luật chứng minh giúp tránh liệt kê tất cả.[](source:slides07)
+
+## Thử thách luyện tập: Phòng thí nghiệm mệnh đề {#challenge-practice}
+
+Kiểm tra phép kéo theo và rút kết luận từ dữ kiện. Bấm “Chơi thử thách” bên dưới để hoàn thành ba bước và nhận phản hồi. Đây là ví dụ diễn giải thêm; dữ kiện của trò chơi được đặt riêng cho việc luyện tập.

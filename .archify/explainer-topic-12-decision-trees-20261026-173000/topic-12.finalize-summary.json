@@ -6,14 +6,14 @@
   "type": "explainer",
   "quality": "showcase",
   "specification": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md",
-    "sha256": "a6ea4869c8206a3ed710dd77d1bb8e4a26a0b1ecec8b35294304646cbce2eeab",
-    "bytes": 2944
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md",
+    "sha256": "b386c9fb6b5c38752b19918d5bcba3c2b690582cb128cecbed1015163f29bb19",
+    "bytes": 3297
   },
   "artifact": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.html",
-    "sha256": "514ff211b7e717d53afde9146cd69cc85a9f03922cd03c0226ea84b267ef6f06",
-    "bytes": 549783
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.html",
+    "sha256": "5c2a9ea8167a47f19ab38fe7474d26177a8479bcf02692ebde875c938cf28fdf",
+    "bytes": 551896
   },
   "gates": {
     "validate": "pass",
@@ -28,8 +28,8 @@
     "truncated": false
   },
   "evidence": {
-    "receipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.finalize.json",
-    "summaryReceipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.finalize-summary.json"
+    "receipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.finalize.json",
+    "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.finalize-summary.json"
   },
   "update": {
     "status": "current",
@@ -42,7 +42,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 798,
+  "durationMs": 825,
   "browserCheck": {
     "requested": false,
     "ran": false

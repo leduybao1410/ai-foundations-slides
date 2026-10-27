@@ -37,3 +37,7 @@ Naïve Bayes không nói các đặc trưng độc lập hoàn toàn trong đờ
 ## Nguồn slide
 
 [Topic 11, loại học và tổng quát hóa](<../../Topic 11 - Giới thiệu học máy, Naive Bayes.pdf#page=5>) · Naïve Bayes: slides 19–27 · Laplace smoothing: slides 28–30.
+
+## Thử thách luyện tập
+
+[Phân loại với Naïve Bayes](../../lessons/challenge.html?topic=topic-11): So sánh điểm chưa chuẩn hóa của hai lớp cho cùng một đặc trưng. Các tình huống và số liệu trong trò chơi là ví dụ diễn giải thêm; kiến thức liên quan: Topic 11 · slides 19–27.

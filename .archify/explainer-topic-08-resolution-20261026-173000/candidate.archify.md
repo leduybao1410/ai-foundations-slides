@@ -55,3 +55,7 @@ Mọi công thức mệnh đề đều đổi được sang CNF. Độ dài có 
 | Backward chaining | Truy vấn cần chứng minh | Tìm luật kết luận ra truy vấn, rồi chứng minh tiền đề |
 
 Hai phương pháp này được trình bày cho luật Horn. Forward có thể sinh facts không liên quan câu hỏi; backward tập trung vào mục tiêu nhưng cần tránh vòng lặp và tính lại cùng mục tiêu.[](source:slides08)
+
+## Thử thách luyện tập: Mở khóa bằng hợp giải {#challenge-practice}
+
+Chuyển luật về clause và tìm mâu thuẫn. Bấm “Chơi thử thách” bên dưới để hoàn thành ba bước và nhận phản hồi. Đây là ví dụ diễn giải thêm; dữ kiện của trò chơi được đặt riêng cho việc luyện tập.

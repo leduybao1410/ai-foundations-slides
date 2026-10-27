@@ -60,3 +60,7 @@ Không làm mượt, một xác suất bằng 0 khiến cả điểm lớp “Th
 ## Điểm dễ nhầm {#caveats}
 
 Giả định “naïve” là độc lập có điều kiện theo lớp; dữ liệu thật không nhất thiết độc lập hoàn toàn. Mô hình vẫn có thể phân lớp tốt dù giả định đơn giản. Dùng log biến tích thành tổng để tránh số quá nhỏ; Laplace smoothing ngăn xác suất bằng 0.[](source:slides11)
+
+## Thử thách luyện tập: Phân loại với Naïve Bayes {#challenge-practice}
+
+So sánh điểm chưa chuẩn hóa của hai lớp cho cùng một đặc trưng. Bấm “Chơi thử thách” bên dưới để hoàn thành ba bước và nhận phản hồi. Đây là ví dụ diễn giải thêm; dữ kiện của trò chơi được đặt riêng cho việc luyện tập.

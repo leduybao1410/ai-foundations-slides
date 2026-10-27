@@ -38,3 +38,7 @@ Greedy chỉ dùng `h`, còn A* dùng `g+h`. “Chấp nhận được” không
 ## Nguồn slide
 
 [Topic 04, heuristic và A*](<../../Topic 04 - Tìm kiếm có thông tin - Astar.pdf#page=4>) · admissibility: slides 22–25 · IDA*: slide 29.
+
+## Thử thách luyện tập
+
+[Dẫn đường với A*](../../lessons/challenge.html?topic=topic-04): Tính f = g + h và chọn nút tiếp theo trong frontier. Các tình huống và số liệu trong trò chơi là ví dụ diễn giải thêm; kiến thức liên quan: Topic 04 · slides 15–25.

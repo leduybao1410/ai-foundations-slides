@@ -6,14 +6,14 @@
   "type": "explainer",
   "quality": "showcase",
   "specification": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/candidate.archify.md",
-    "sha256": "0d323b36116ec3e8dbec7e96e23bd676c2c852559826d18a4b3c5023b2dd8753",
-    "bytes": 3516
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/candidate.archify.md",
+    "sha256": "5caec53cdfdba0ddddd25da05eab4c5692418bc93e50a685bf5f66116589d99f",
+    "bytes": 3880
   },
   "artifact": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/topic-09.html",
-    "sha256": "aa45f7dda2238accad948f30fc6b2ce810b2d90cac7fb23e46e86bdf5a40bb99",
-    "bytes": 914996
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/topic-09.html",
+    "sha256": "2b84a3a4213e13d1d0155f7267687baa50177ce6889b5f7325931a372fd682ae",
+    "bytes": 917158
   },
   "gates": {
     "validate": "pass",
@@ -28,8 +28,8 @@
     "truncated": false
   },
   "evidence": {
-    "receipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/topic-09.finalize.json",
-    "summaryReceipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/topic-09.finalize-summary.json"
+    "receipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/topic-09.finalize.json",
+    "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/topic-09.finalize-summary.json"
   },
   "update": {
     "status": "current",
@@ -42,7 +42,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 1047,
+  "durationMs": 1108,
   "browserCheck": {
     "requested": false,
     "ran": false

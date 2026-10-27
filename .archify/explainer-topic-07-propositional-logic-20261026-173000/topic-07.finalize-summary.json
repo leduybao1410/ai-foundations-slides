@@ -6,14 +6,14 @@
   "type": "explainer",
   "quality": "showcase",
   "specification": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/candidate.archify.md",
-    "sha256": "4791de9e5a8fe9921e860662ff84474899796a71b5e58304233f0e7f7cadfe14",
-    "bytes": 2885
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/candidate.archify.md",
+    "sha256": "d31e046f0f38356dcf9e6c17f5e7b64fda3de98f6f5059ceedf08d49bab2f097",
+    "bytes": 3258
   },
   "artifact": {
-    "path": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/topic-07.html",
-    "sha256": "3cc076fbc6d9709286a6871b0faf26cb07f71eff443fe2fc96299e639d96f4ac",
-    "bytes": 516994
+    "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/topic-07.html",
+    "sha256": "4fca7a38dc0c540735eeb5dfbf8a9f16f381f6231b7c9700c8c588a4badf6e6f",
+    "bytes": 519181
   },
   "gates": {
     "validate": "pass",
@@ -28,8 +28,8 @@
     "truncated": false
   },
   "evidence": {
-    "receipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/topic-07.finalize.json",
-    "summaryReceipt": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/topic-07.finalize-summary.json"
+    "receipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/topic-07.finalize.json",
+    "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/topic-07.finalize-summary.json"
   },
   "update": {
     "status": "current",
@@ -42,7 +42,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 813,
+  "durationMs": 843,
   "browserCheck": {
     "requested": false,
     "ran": false

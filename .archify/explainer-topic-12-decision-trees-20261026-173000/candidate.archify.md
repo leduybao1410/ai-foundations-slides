@@ -53,3 +53,7 @@ Dùng các số trong ví dụ ID3 trên slide: 14 ngày chơi gồm 9 Yes và 5
 Mỗi đường từ gốc tới lá cho một luật: `IF Outlook=Overcast THEN Yes`; `IF Outlook=Rain AND Wind=Weak THEN Yes`; `IF Outlook=Rain AND Wind=Strong THEN No`; `IF Outlook=Sunny AND Humidity=Normal THEN Yes`; `IF Outlook=Sunny AND Humidity=High THEN No`.[](source:slides12)
 
 Cây giải thích được quyết định, nhưng cây quá sâu có thể học chi tiết tập huấn luyện thay vì quy luật tổng quát. Nguyên tắc Occam trong slide ưu tiên mô hình đơn giản hơn khi khả năng giải thích tương đương.[](source:slides12)
+
+## Thử thách luyện tập: Xây cây quyết định {#challenge-practice}
+
+Đo độ lẫn nhãn rồi chọn cách chia cho ID3. Bấm “Chơi thử thách” bên dưới để hoàn thành ba bước và nhận phản hồi. Đây là ví dụ diễn giải thêm; dữ kiện của trò chơi được đặt riêng cho việc luyện tập.

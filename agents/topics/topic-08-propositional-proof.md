@@ -38,3 +38,7 @@ Forward chaining đi **từ dữ kiện đến hệ quả**; backward chaining �
 ## Nguồn slide
 
 [Topic 08, CNF và resolution](<../../Topic 08 - Chứng minh trong logic mệnh đề.pdf#page=4>) · forward chaining: slides 13–22 · backward chaining và so sánh: slides 23–35.
+
+## Thử thách luyện tập
+
+[Mở khóa bằng hợp giải](../../lessons/challenge.html?topic=topic-08): Chuyển luật về clause và tìm mâu thuẫn. Các tình huống và số liệu trong trò chơi là ví dụ diễn giải thêm; kiến thức liên quan: Topic 08 · slides 4–11.

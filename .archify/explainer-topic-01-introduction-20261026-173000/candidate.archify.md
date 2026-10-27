@@ -50,3 +50,7 @@ Trong môn học, “hợp lý” là chọn hành động tốt nhất theo ti�
 - Tìm kiếm, lập luận và học máy là ba mạch lớn của môn học.
 
 Turing test quan sát hành vi trong trò chơi bắt chước. Đây là một góc nhìn về AI, không phải điều kiện duy nhất cho tác nhân thông minh.[](source:slides01)
+
+## Thử thách luyện tập: Điều khiển căn phòng {#challenge-practice}
+
+Giúp máy điều nhiệt trở thành một tác nhân hợp lý. Bấm “Chơi thử thách” bên dưới để hoàn thành ba bước và nhận phản hồi. Đây là ví dụ diễn giải thêm; dữ kiện của trò chơi được đặt riêng cho việc luyện tập.

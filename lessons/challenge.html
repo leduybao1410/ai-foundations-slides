@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thử thách · Cơ sở Trí tuệ Nhân tạo</title>
+  <link rel="stylesheet" href="challenge.css">
+  <script defer src="challenge-core.js"></script>
+  <script defer src="challenge-data.js"></script>
+  <script defer src="lesson-catalog.js"></script>
+  <script defer src="challenge-ui.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <nav class="top-nav" aria-label="Điều hướng"><a href="index.html">← Mục lục</a><a id="lesson-link" href="index.html">Xem bài minh họa</a></nav>
+    <header class="hero">
+      <p class="eyebrow" id="topic-label">THỬ THÁCH</p>
+      <h1 id="challenge-title">Đang mở thử thách…</h1>
+      <p id="mission"></p>
+      <p class="source" id="source"></p>
+      <p class="rules">Bắt đầu với 100 điểm; mỗi lượt sai trừ 10 điểm, thấp nhất 40. Hoàn thành cả 3 bước để nhận sao.</p>
+    </header>
+    <section class="challenge-card" aria-labelledby="stage-title">
+      <div class="stage-meta"><span id="stage-count"></span><span id="mistake-count"></span></div>
+      <div class="progress-track" role="progressbar" aria-label="Tiến độ thử thách" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0"><span id="progress-fill"></span></div>
+      <h2 id="stage-title"></h2>
+      <p class="instruction" id="instruction"></p>
+      <div id="interaction"></div>
+      <div class="feedback" id="feedback" role="status" aria-live="polite"></div>
+      <div class="actions"><button type="button" class="primary" id="check">Kiểm tra</button><button type="button" class="primary" id="next" hidden>Tiếp tục →</button></div>
+    </section>
+    <p class="footnote">Đây là tình huống minh họa để luyện tập; số liệu trong thử thách được đặt riêng cho ví dụ. Tiến độ lưu trên trình duyệt này.</p>
+  </main>
+</body>
+</html>

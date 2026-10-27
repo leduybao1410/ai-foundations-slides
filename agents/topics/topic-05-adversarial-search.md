@@ -37,3 +37,7 @@ Tỉa alpha-beta không phải phỏng đoán hay bỏ qua nhánh tùy ý; nó l
 ## Nguồn slide
 
 [Topic 05, minimax](<../../Topic 05 - Tìm kiếm đối kháng.pdf#page=10>) · alpha-beta: slides 17–23 · cutoff và hàm lượng giá: slides 26–27.
+
+## Thử thách luyện tập
+
+[Đấu trí minimax](../../lessons/challenge.html?topic=topic-05): Lan truyền giá trị từ lá và nhận biết lúc có thể tỉa nhánh. Các tình huống và số liệu trong trò chơi là ví dụ diễn giải thêm; kiến thức liên quan: Topic 05 · slides 10–23.

@@ -38,3 +38,7 @@ Chance node không tự có nghĩa là mọi nhánh đồng xác suất; phải 
 ## Nguồn slide
 
 [Topic 05.1, ý tưởng expectimax](<../../Topic 05.1 - Tìm kiếm đối kháng_Bonus.pdf#page=4>) · ví dụ tính kỳ vọng: slides 10–34 · giả định/thực tế: slides 38–47.
+
+## Thử thách luyện tập
+
+[Chọn nước đi có may rủi](../../lessons/challenge.html?topic=topic-05-1): Tính kỳ vọng ở nút chance rồi để MAX chọn. Các tình huống và số liệu trong trò chơi là ví dụ diễn giải thêm; kiến thức liên quan: Topic 05.1 · slides 4, 10–14.

@@ -67,3 +67,7 @@ Cờ vua có cây quá lớn để đi đến mọi trạng thái kết thúc tr
 | Alpha-beta | Giảm nhánh, giữ nguyên giá trị minimax |
 
 MAX/MIN giả định đối thủ tối ưu. Nếu hành động đối thủ có tính ngẫu nhiên, cần cân nhắc mô hình kỳ vọng ở Topic 05.1.[](source:slides05)
+
+## Thử thách luyện tập: Đấu trí minimax {#challenge-practice}
+
+Lan truyền giá trị từ lá và nhận biết lúc có thể tỉa nhánh. Bấm “Chơi thử thách” bên dưới để hoàn thành ba bước và nhận phản hồi. Đây là ví dụ diễn giải thêm; dữ kiện của trò chơi được đặt riêng cho việc luyện tập.

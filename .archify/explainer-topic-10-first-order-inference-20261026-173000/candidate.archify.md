@@ -66,3 +66,7 @@ Bắt đầu với `Ong(Art,?)`. Tìm luật có kết luận `Ong(x,z)`, thế 
 | Backward | Truy vấn | Vòng lặp hoặc lặp lại mục tiêu con |
 
 Theo dõi mục tiêu trong stack để tránh vòng lặp, và ghi nhớ mục tiêu đã giải quyết để tránh tính lại. Mỗi lần dùng một luật, đổi tên biến luật để tránh nhầm với biến đang có trong truy vấn.[](source:slides10)
+
+## Thử thách luyện tập: Truy tìm kết luận {#challenge-practice}
+
+Áp dụng phép thế và suy diễn tiến trên luật Horn. Bấm “Chơi thử thách” bên dưới để hoàn thành ba bước và nhận phản hồi. Đây là ví dụ diễn giải thêm; dữ kiện của trò chơi được đặt riêng cho việc luyện tập.

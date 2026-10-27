@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "receiptId": "4c4def28-d3b8-4b36-ad1e-39a4d622f273",
+  "receiptId": "aa6714c9-d4b6-4c48-a677-c7251c2bdd74",
   "status": "current",
   "command": "deliver",
   "type": "explainer",
-  "input": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/candidate.archify.md",
-  "output": "/Users/Baro/Downloads/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.html",
+  "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/candidate.archify.md",
+  "output": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-04-astar-20261026-173000/topic-04.html",
   "specification": {
-    "sha256": "1b353464891d93307f075efbd0e78c5c028b49517618495d5bab05313a975b7b",
-    "bytes": 3391
+    "sha256": "2582c5bcbc513c0d9dff958b72c0da94db7905fd01a48bff1b1a83ce6012640f",
+    "bytes": 3749
   },
   "artifact": {
-    "sha256": "d2718b7a45b433fd244b1b76562aa6b3ac40f744716a4fe34aa5e1298fa66f46",
-    "bytes": 537949
+    "sha256": "d6d1be35130cdcfae4a131c9cfc3d93ccdf374a281bbdda42d9b192c39ac2470",
+    "bytes": 540076
   },
   "explainer": {
-    "preparedSha256": "5e1e783c38ba267c459e0bceb37b3f19e10f1d77b6cee0f42040cdc5abf745b1",
+    "preparedSha256": "f284c1cfe133b78d43a8a68625110029393da8c72be49415c37c05a3ea22aa12",
     "dependencies": [
       {
         "kind": "diagram-spec",
