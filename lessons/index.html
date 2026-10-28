@@ -8,6 +8,7 @@
   <script defer src="index-progress.js"></script>
   <script defer src="lesson-catalog.js"></script>
   <script defer src="chat-widget.js"></script>
+  <script defer src="labs/bootstrap.js"></script>
   <style>
     :root { color-scheme: light; --ink:#192d36; --muted:#5c7078; --line:#dce6e7; --accent:#0a706b; --paper:#f4f8f7; }
     * { box-sizing:border-box; }
@@ -31,6 +32,7 @@
     h3 a:hover { color:var(--accent); text-decoration:underline; text-underline-offset:3px; }
     .lesson p { min-height:48px; margin:0; color:var(--muted); font-size:14px; }
     .lesson p.challenge-status { min-height:0; margin-top:12px; color:#075e59; font-weight:700; }
+    .lesson p.lab-progress { min-height:0; margin-top:8px; color:#075e59; font-size:12px; }
     .links { display:flex; flex-wrap:wrap; gap:9px 16px; margin-top:18px; padding-top:13px; border-top:1px solid #edf1f1; }
     .links a { color:var(--accent); font-size:13px; font-weight:650; text-decoration:none; }
     .links a:hover { text-decoration:underline; text-underline-offset:3px; }
@@ -46,7 +48,7 @@
       <p>Mở một topic, bấm qua ví dụ theo từng bước, rồi quay lại ghi chú hoặc trang slide tương ứng.</p>
       <div class="stats"><span>12 bài minh họa</span><span id="challenge-summary" aria-live="polite">Đang tải tiến độ…</span><span>Mở được khi không có mạng</span></div>
     </header>
-    
+
     <section class="group" aria-labelledby="Nền tảng">
       <h2 id="Nền tảng">Nền tảng</h2>
       <div class="cards">
@@ -55,7 +57,9 @@
             <h3><a href="../.archify/explainer-topic-01-introduction-20261026-173000/topic-01.html">Giới thiệu trí tuệ nhân tạo</a></h3>
             <p>Vòng lặp tác nhân, mục tiêu hợp lý và bốn góc nhìn về AI.</p>
             <p class="challenge-status">Đang tải tiến độ…</p>
+
             <div class="links">
+
               <a href="challenge.html?topic=topic-01">Chơi thử thách →</a>
               <a href="../agents/topics/topic-01-introduction.md">Ghi chú RAG</a>
               <a href="../Topic%2001%20-%20Gio%CC%9B%CC%81i%20thie%CC%A3%CC%82u.pdf#page=5">PDF · slide 5–9</a>
@@ -71,7 +75,9 @@
             <h3><a href="../.archify/explainer-topic-02-03-search-20261026-173000/topic-02-03.html">Bài toán tìm kiếm và tìm kiếm mù</a></h3>
             <p>So sánh DFS, BFS và UCS trên một đồ thị có trọng số.</p>
             <p class="challenge-status">Đang tải tiến độ…</p>
+            <p class="lab-progress" data-lab-progress="topic-02-03">Thực hành tương tác · 0/3 mốc thành thạo</p>
             <div class="links">
+              <a data-lab-link href="../.archify/explainer-topic-02-03-search-20261026-173000/topic-02-03.html#interactive-lab">Mở phòng thí nghiệm →</a>
               <a href="challenge.html?topic=topic-02-03">Chơi thử thách →</a>
               <a href="../agents/topics/topic-02-03-search.md">Ghi chú RAG</a>
               <a href="../Topic%2002_03%20-%20Ba%CC%80i%20toa%CC%81n%20ti%CC%80m%20kie%CC%82%CC%81m%20-%20Ti%CC%80m%20kie%CC%82%CC%81m%20mu%CC%80.pdf#page=11">PDF · slide 11–18</a>
@@ -82,7 +88,9 @@
             <h3><a href="../.archify/explainer-topic-04-astar-20261026-173000/topic-04.html">Heuristic và A*</a></h3>
             <p>Greedy so với A*, g(n), h(n), f(n) và điều kiện tối ưu.</p>
             <p class="challenge-status">Đang tải tiến độ…</p>
+            <p class="lab-progress" data-lab-progress="topic-04">Thực hành tương tác · 0/3 mốc thành thạo</p>
             <div class="links">
+              <a data-lab-link href="../.archify/explainer-topic-04-astar-20261026-173000/topic-04.html#interactive-lab">Mở phòng thí nghiệm →</a>
               <a href="challenge.html?topic=topic-04">Chơi thử thách →</a>
               <a href="../agents/topics/topic-04-heuristic-a-star.md">Ghi chú RAG</a>
               <a href="../Topic%2004%20-%20Ti%CC%80m%20kie%CC%82%CC%81m%20co%CC%81%20tho%CC%82ng%20tin%20-%20Astar.pdf#page=4">PDF · slide 4–25</a>
@@ -93,7 +101,9 @@
             <h3><a href="../.archify/explainer-topic-06-local-search-20261026-173000/topic-06.html">Tìm kiếm cục bộ và thuật giải di truyền</a></h3>
             <p>Leo đồi, luyện thép, local beam và genetic algorithm.</p>
             <p class="challenge-status">Đang tải tiến độ…</p>
+            <p class="lab-progress" data-lab-progress="topic-06">Thực hành tương tác · 0/3 mốc thành thạo</p>
             <div class="links">
+              <a data-lab-link href="../.archify/explainer-topic-06-local-search-20261026-173000/topic-06.html#interactive-lab">Mở phòng thí nghiệm →</a>
               <a href="challenge.html?topic=topic-06">Chơi thử thách →</a>
               <a href="../agents/topics/topic-06-local-search-genetic.md">Ghi chú RAG</a>
               <a href="../Topic%2006%20-%20Ti%CC%80m%20kie%CC%82%CC%81m%20leo%20%C4%91o%CC%82%CC%80i%20va%CC%80%20ca%CC%81c%20da%CC%A3ng%20kha%CC%81c.pdf#page=4">PDF · slide 4–27</a>
@@ -109,7 +119,9 @@
             <h3><a href="../.archify/explainer-topic-05-minimax-20261026-173000/topic-05.html">Tìm kiếm đối kháng</a></h3>
             <p>Cây minimax, tỉa alpha-beta và hàm lượng giá.</p>
             <p class="challenge-status">Đang tải tiến độ…</p>
+
             <div class="links">
+
               <a href="challenge.html?topic=topic-05">Chơi thử thách →</a>
               <a href="../agents/topics/topic-05-adversarial-search.md">Ghi chú RAG</a>
               <a href="../Topic%2005%20-%20Ti%CC%80m%20kie%CC%82%CC%81m%20%C4%91o%CC%82%CC%81i%20kha%CC%81ng.pdf#page=10">PDF · slide 10–23</a>
@@ -120,7 +132,9 @@
             <h3><a href="../.archify/explainer-topic-05-1-expectimax-20261026-173000/topic-05.1.html">Expectimax</a></h3>
             <p>Tính giá trị kỳ vọng theo xác suất và so với minimax.</p>
             <p class="challenge-status">Đang tải tiến độ…</p>
+
             <div class="links">
+
               <a href="challenge.html?topic=topic-05-1">Chơi thử thách →</a>
               <a href="../agents/topics/topic-05-1-expectimax.md">Ghi chú RAG</a>
               <a href="../Topic%2005.1%20-%20Ti%CC%80m%20kie%CC%82%CC%81m%20%C4%91o%CC%82%CC%81i%20kha%CC%81ng_Bonus.pdf#page=2">PDF · slide 2–4</a>
@@ -136,7 +150,9 @@
             <h3><a href="../.archify/explainer-topic-07-propositional-logic-20261026-173000/topic-07.html">Logic mệnh đề</a></h3>
             <p>Cú pháp, mô hình, suy dẫn và modus ponens.</p>
             <p class="challenge-status">Đang tải tiến độ…</p>
+
             <div class="links">
+
               <a href="challenge.html?topic=topic-07">Chơi thử thách →</a>
               <a href="../agents/topics/topic-07-propositional-logic.md">Ghi chú RAG</a>
               <a href="../Topic%2007%20-%20Logic%20-%20Logic%20me%CC%A3%CC%82nh%20%C4%91e%CC%82%CC%80.pdf#page=4">PDF · slide 4–12</a>
@@ -147,7 +163,9 @@
             <h3><a href="../.archify/explainer-topic-08-resolution-20261026-173000/topic-08.html">Chứng minh trong logic mệnh đề</a></h3>
             <p>CNF, resolution, chứng minh phản chứng và chaining.</p>
             <p class="challenge-status">Đang tải tiến độ…</p>
+
             <div class="links">
+
               <a href="challenge.html?topic=topic-08">Chơi thử thách →</a>
               <a href="../agents/topics/topic-08-propositional-proof.md">Ghi chú RAG</a>
               <a href="../Topic%2008%20-%20Chu%CC%9B%CC%81ng%20minh%20trong%20logic%20me%CC%A3%CC%82nh%20%C4%91e%CC%82%CC%80.pdf#page=3">PDF · slide 3–14</a>
@@ -158,7 +176,9 @@
             <h3><a href="../.archify/explainer-topic-09-first-order-logic-20261026-173000/topic-09.html">Logic bậc nhất</a></h3>
             <p>Đối tượng, quan hệ, lượng từ và phép đồng nhất.</p>
             <p class="challenge-status">Đang tải tiến độ…</p>
+
             <div class="links">
+
               <a href="challenge.html?topic=topic-09">Chơi thử thách →</a>
               <a href="../agents/topics/topic-09-first-order-logic.md">Ghi chú RAG</a>
               <a href="../Topic%2009%20-%20Logic%20ba%CC%A3%CC%82c%20nha%CC%82%CC%81t.pdf#page=3">PDF · slide 3–12</a>
@@ -169,7 +189,9 @@
             <h3><a href="../.archify/explainer-topic-10-first-order-inference-20261026-173000/topic-10.html">Suy diễn với logic bậc nhất</a></h3>
             <p>Hợp giải FOL, forward chaining và backward chaining.</p>
             <p class="challenge-status">Đang tải tiến độ…</p>
+
             <div class="links">
+
               <a href="challenge.html?topic=topic-10">Chơi thử thách →</a>
               <a href="../agents/topics/topic-10-first-order-inference.md">Ghi chú RAG</a>
               <a href="../Topic%2010%20-%20Suy%20die%CC%82%CC%83n%20vo%CC%9B%CC%81i%20logic%20ba%CC%A3%CC%82c%20nha%CC%82%CC%81t.pdf#page=3">PDF · slide 3–21</a>
@@ -185,7 +207,9 @@
             <h3><a href="../.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html">Học máy và Naïve Bayes</a></h3>
             <p>Tổng quát hóa, xác suất phân lớp và Laplace smoothing.</p>
             <p class="challenge-status">Đang tải tiến độ…</p>
+
             <div class="links">
+
               <a href="challenge.html?topic=topic-11">Chơi thử thách →</a>
               <a href="../agents/topics/topic-11-machine-learning-naive-bayes.md">Ghi chú RAG</a>
               <a href="../Topic%2011%20-%20Gio%CC%9B%CC%81i%20thie%CC%A3%CC%82u%20ho%CC%A3c%20ma%CC%81y%2C%20Naive%20Bayes.pdf#page=5">PDF · slide 5–30</a>
@@ -196,7 +220,9 @@
             <h3><a href="../.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.html">Cây quyết định và học quy nạp</a></h3>
             <p>Entropy, chọn thuộc tính ID3 và rút luật IF–THEN.</p>
             <p class="challenge-status">Đang tải tiến độ…</p>
+
             <div class="links">
+
               <a href="challenge.html?topic=topic-12">Chơi thử thách →</a>
               <a href="../agents/topics/topic-12-decision-trees.md">Ghi chú RAG</a>
               <a href="../Topic%2012%20-%20Ca%CC%82y%20quye%CC%82%CC%81t%20%C4%91i%CC%A3nh%2C%20ho%CC%A3c%20quy%20na%CC%A3p.pdf#page=3">PDF · slide 3–16</a>

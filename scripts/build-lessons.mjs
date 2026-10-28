@@ -2,6 +2,7 @@ import { spawnSync } from 'node:child_process';
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { LABS } from '../src/labs/content.mjs';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const defaultArchifyRoot = '/Volumes/data/Work/Tool/archify/archify';
@@ -23,6 +24,12 @@ function localHref(fromDirectory, repositoryPath, fragment = '') {
   return `${encoded}${fragment}`;
 }
 
+function renderLab(lesson) {
+  const meta = LABS[lesson.id];
+  const source = localHref(path.dirname(lesson.output), lesson.sourcePdf, `#page=${meta.page}`);
+  return `<section id="interactive-lab" class="learning-lab" data-learning-lab="${escapeHtml(lesson.id)}" data-source="${escapeHtml(source)}" aria-label="Phòng thí nghiệm tương tác"><div class="lab-preview"><div class="lab-preview-copy"><p class="lab-kicker">Phòng thí nghiệm ${meta.number} · Lưu tiến độ trên trình duyệt</p><h2>${escapeHtml(meta.title)}</h2><p class="lab-subtitle">${escapeHtml(meta.subtitle)}</p><button type="button" class="lab-primary" data-lab-launch>Mở phòng thí nghiệm</button><p class="lab-status" data-lab-preview-status>Có hướng dẫn · tự chỉnh dữ kiện · tự động lưu tiến độ</p><noscript>Bật JavaScript để tương tác. Bạn vẫn có thể đọc ví dụ và slide trong bài.</noscript></div><div class="lab-preview-badge" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none"><path d="M20 68 48 25 82 66M20 68h62M48 25v43" stroke="currentColor" stroke-width="3"/><circle cx="20" cy="68" r="9" fill="currentColor"/><circle cx="48" cy="25" r="9" fill="currentColor"/><circle cx="82" cy="66" r="9" fill="currentColor"/></svg></div></div></section>`;
+}
+
 function renderIndex(manifest) {
   const groups = new Map();
   for (const lesson of manifest.lessons) {
@@ -41,7 +48,9 @@ function renderIndex(manifest) {
             <h3><a href="${escapeHtml(localHref('lessons', lesson.output))}">${escapeHtml(lesson.title)}</a></h3>
             <p>${escapeHtml(lesson.summary)}</p>
             <p class="challenge-status">Đang tải tiến độ…</p>
+            ${lesson.lab ? `<p class="lab-progress" data-lab-progress="${escapeHtml(lesson.id)}">Thực hành tương tác · 0/3 mốc thành thạo</p>` : ''}
             <div class="links">
+              ${lesson.lab ? `<a data-lab-link href="${escapeHtml(localHref('lessons', lesson.output, '#interactive-lab'))}">Mở phòng thí nghiệm →</a>` : ''}
               <a href="challenge.html?topic=${encodeURIComponent(lesson.id)}">Chơi thử thách →</a>
               <a href="${escapeHtml(localHref('lessons', lesson.note))}">Ghi chú RAG</a>
               <a href="${escapeHtml(localHref('lessons', lesson.sourcePdf, pdfPage))}">PDF · slide ${lesson.sourcePages[0]}–${lesson.sourcePages[1]}</a>
@@ -60,6 +69,7 @@ function renderIndex(manifest) {
   <script defer src="index-progress.js"></script>
   <script defer src="lesson-catalog.js"></script>
   <script defer src="chat-widget.js"></script>
+  <script defer src="labs/bootstrap.js"></script>
   <style>
     :root { color-scheme: light; --ink:#192d36; --muted:#5c7078; --line:#dce6e7; --accent:#0a706b; --paper:#f4f8f7; }
     * { box-sizing:border-box; }
@@ -83,6 +93,7 @@ function renderIndex(manifest) {
     h3 a:hover { color:var(--accent); text-decoration:underline; text-underline-offset:3px; }
     .lesson p { min-height:48px; margin:0; color:var(--muted); font-size:14px; }
     .lesson p.challenge-status { min-height:0; margin-top:12px; color:#075e59; font-weight:700; }
+    .lesson p.lab-progress { min-height:0; margin-top:8px; color:#075e59; font-size:12px; }
     .links { display:flex; flex-wrap:wrap; gap:9px 16px; margin-top:18px; padding-top:13px; border-top:1px solid #edf1f1; }
     .links a { color:var(--accent); font-size:13px; font-weight:650; text-decoration:none; }
     .links a:hover { text-decoration:underline; text-underline-offset:3px; }
@@ -134,18 +145,25 @@ for (const lesson of manifest.lessons) {
     const details = [result.stderr, result.stdout].filter(Boolean).join('\n').slice(-7000);
     throw new Error(`Archify failed for Topic ${lesson.topic} (exit ${result.status ?? 'unknown'}).\n${details}`);
   }
-  const generated = await readFile(output, 'utf8');
+  let generated = await readFile(output, 'utf8');
+  if (lesson.lab) {
+    const labAnchor = '<main id="board">';
+    if (generated.split(labAnchor).length !== 2) throw new Error(`Cannot locate lab anchor for ${lesson.id}`);
+    generated = generated.replace(labAnchor, labAnchor + renderLab(lesson));
+  }
   const anchor = '</main><footer>';
   if (generated.split(anchor).length !== 2) throw new Error(`Cannot locate a unique lesson footer for ${lesson.id}`);
   const challengeHref = `${localHref(path.dirname(lesson.output), 'lessons/challenge.html')}?topic=${encodeURIComponent(lesson.id)}`;
   const challengeCta = `<section aria-label="Thử thách luyện tập" style="margin:24px auto;padding:22px;max-width:1000px;border:1px solid #b9d9d0;border-radius:16px;background:#edf8f3;color:#153a42;font-family:system-ui,sans-serif"><h2 style="margin:0 0 8px">Sẵn sàng thử sức?</h2><p>Áp dụng kiến thức qua ba bước, nhận phản hồi và lưu điểm cao nhất trên trình duyệt này.</p><a href="${escapeHtml(challengeHref)}" style="display:inline-block;padding:12px 18px;border-radius:10px;background:#086c64;color:white;font-weight:700;text-decoration:none">Chơi thử thách →</a></section>`;
-  const chatMeta = `<meta name="course-chat-topic" content="${escapeHtml(lesson.id)}"><link rel="stylesheet" href="${escapeHtml(localHref(path.dirname(lesson.output), 'lessons/chat-widget.css'))}">`;
-  const chatScripts = `<script defer src="${escapeHtml(localHref(path.dirname(lesson.output), 'lessons/lesson-catalog.js'))}"></script><script defer src="${escapeHtml(localHref(path.dirname(lesson.output), 'lessons/chat-widget.js'))}"></script>`;
+  const labHead = lesson.lab ? `<link rel="stylesheet" href="${escapeHtml(localHref(path.dirname(lesson.output), 'lessons/labs/labs.css'))}">` : '';
+  const labScript = lesson.lab ? `<script defer src="${escapeHtml(localHref(path.dirname(lesson.output), 'lessons/labs/bootstrap.js'))}"></script>` : '';
+  const chatMeta = labHead + `<meta name="course-chat-topic" content="${escapeHtml(lesson.id)}"><link rel="stylesheet" href="${escapeHtml(localHref(path.dirname(lesson.output), 'lessons/chat-widget.css'))}">`;
+  const chatScripts = labScript + `<script defer src="${escapeHtml(localHref(path.dirname(lesson.output), 'lessons/lesson-catalog.js'))}"></script><script defer src="${escapeHtml(localHref(path.dirname(lesson.output), 'lessons/chat-widget.js'))}"></script>`;
   if (generated.split('</head>').length !== 2 || !generated.endsWith('</script></body></html>')) throw new Error(`Cannot locate the unique document head and body ending for ${lesson.id}`);
   const withChatHead = generated.replace('</head>', `${chatMeta}</head>`);
   const withChallenge = withChatHead.replace(anchor, `${challengeCta}${anchor}`);
   const bodyEnd = '</script></body></html>';
-  const bodyEndPosition = withChallenge.lastIndexOf(bodyEnd);
+  const bodyEndPosition = withChallenge.lastIndexOf(bodyEnd) + '</script>'.length;
   await writeFile(output, `${withChallenge.slice(0, bodyEndPosition)}${chatScripts}${withChallenge.slice(bodyEndPosition)}`, 'utf8');
   const record = { id: lesson.id, output: lesson.output, stdout: result.stdout.trim() };
   built.push(record);
@@ -156,7 +174,7 @@ for (const lesson of manifest.lessons) {
   try { await readFile(path.resolve(repoRoot, lesson.output)); }
   catch { throw new Error(`Archify reported success but did not create ${lesson.output}.`); }
 }
-await writeFile(indexPath, renderIndex(manifest), 'utf8');
+await writeFile(indexPath, renderIndex(manifest).replace(/[ \t]+$/gm, ''), 'utf8');
 const catalog = manifest.lessons.map(lesson => ({
   id: lesson.id, topic: lesson.topic, title: lesson.title,
   output: localHref('lessons', lesson.output),
