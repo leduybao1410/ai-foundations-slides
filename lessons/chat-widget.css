@@ -17,7 +17,8 @@
 .course-chat-assistant { align-self:flex-start; background:#eef5f3; }
 .course-chat-error { color:#842e22; background:#fff0ed; }
 .course-chat-form { display:flex; align-items:flex-end; gap:8px; padding:12px; border-top:1px solid var(--course-chat-line); }
-.course-chat-form textarea { min-width:0; flex:1; resize:vertical; border:1px solid var(--course-chat-line); border-radius:10px; padding:10px; color:inherit; font:inherit; font-size:13px; }
+.course-chat-form textarea { min-width:0; flex:1; resize:vertical; border:1px solid var(--course-chat-line); border-radius:10px; padding:10px; color:#f4f7f6 !important; background-color:#202426 !important; caret-color:#f4f7f6; color-scheme:dark; font:inherit; font-size:13px; }
+#course-chat-root .course-chat-form textarea::placeholder { color:#b8c8c7; opacity:1; }
 .course-chat-form button { border:0; border-radius:10px; padding:11px 14px; color:white; background:var(--course-chat-accent); font:inherit; font-size:13px; font-weight:700; cursor:pointer; }
 .course-chat-form button:disabled { opacity:.55; cursor:wait; }
 .course-chat-note { margin:0; padding:0 14px 12px; color:#77868a; font-size:11px; }
