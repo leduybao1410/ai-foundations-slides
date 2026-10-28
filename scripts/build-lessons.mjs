@@ -19,7 +19,7 @@ function escapeHtml(value) {
 
 function localHref(fromDirectory, repositoryPath, fragment = '') {
   const absoluteTarget = path.resolve(repoRoot, repositoryPath);
-  const relativeTarget = path.relative(path.resolve(repoRoot, fromDirectory), absoluteTarget).split(path.sep).join('/');
+  const relativeTarget = path.relative(path.resolve(repoRoot, fromDirectory), absoluteTarget).split(path.sep).join('/').normalize('NFC');
   const encoded = relativeTarget.split('/').map(encodeURIComponent).join('/');
   return `${encoded}${fragment}`;
 }
