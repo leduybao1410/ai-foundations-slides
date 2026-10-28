@@ -22,7 +22,7 @@
     root.innerHTML = `
       <button class="course-chat-launcher" type="button" aria-expanded="false" aria-controls="course-chat-panel">Hỏi trợ lý AI</button>
       <section class="course-chat-panel" id="course-chat-panel" hidden aria-label="Trợ lý học AI">
-        <header class="course-chat-header"><div><strong>Trợ lý học AI</strong><span>Hỏi về slide và ví dụ của môn học</span></div><button type="button" class="course-chat-close" aria-label="Đóng">×</button></header>
+        <header class="course-chat-header"><div class="course-chat-heading"><strong>Trợ lý học AI</strong><span>Hỏi về slide và ví dụ của môn học</span></div><div class="course-chat-actions"><button type="button" class="course-chat-expand" aria-controls="course-chat-panel" aria-pressed="false" title="Mở rộng khung chat">Mở rộng</button><button type="button" class="course-chat-close" aria-label="Đóng">×</button></div></header>
         <label class="course-chat-topic-label" for="course-chat-topic">Chủ đề</label>
         <select id="course-chat-topic" class="course-chat-topic"></select>
         <div class="course-chat-log" role="log" aria-live="polite"><p class="course-chat-welcome">Chọn chủ đề rồi hỏi về khái niệm, ví dụ hoặc ký hiệu trong bài.</p></div>
@@ -54,6 +54,7 @@
     const form = root.querySelector(".course-chat-form");
     const input = root.querySelector("#course-chat-input");
     const close = root.querySelector(".course-chat-close");
+    const expand = root.querySelector(".course-chat-expand");
     const storageKey = () => `ai-foundations-course-chat-v1:${select.value || "unselected"}`;
     let history = [];
     try {
@@ -77,6 +78,21 @@
       if (!panel.hidden) input.focus();
     });
     close.addEventListener("click", () => { panel.hidden = true; launcher.setAttribute("aria-expanded", "false"); launcher.focus(); });
+    expand.addEventListener("click", () => setExpanded(expand.getAttribute("aria-pressed") !== "true"));
+    panel.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && expand.getAttribute("aria-pressed") === "true") {
+        event.preventDefault();
+        setExpanded(false);
+        expand.focus();
+      }
+    });
+
+    function setExpanded(expanded) {
+      panel.classList.toggle("course-chat-panel-expanded", expanded);
+      expand.setAttribute("aria-pressed", String(expanded));
+      expand.textContent = expanded ? "Thu gọn" : "Mở rộng";
+      expand.title = expanded ? "Thu gọn khung chat (Esc)" : "Mở rộng khung chat";
+    }
 
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
