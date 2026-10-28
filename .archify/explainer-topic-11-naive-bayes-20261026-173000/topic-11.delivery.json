@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "receiptId": "60ed45f3-5f99-48e0-8754-09cfff46bf3e",
+  "receiptId": "f6256eee-dfe4-4412-88a6-cae68fc80acc",
   "status": "current",
   "command": "deliver",
   "type": "explainer",
   "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
   "output": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
   "specification": {
-    "sha256": "5ea97d4ee1272f9cfdd27f674ebd2d07b445148500f9511cbf7524e82c5877a0",
-    "bytes": 3794
+    "sha256": "72d15ccd0db83bc974d97bd2aa1725daefa20a164827bee2067b3c5c89bddbf5",
+    "bytes": 6723
   },
   "artifact": {
-    "sha256": "b2f2a38972c349f8c3c3dd31fa171d8cc360cd144cbbb297f25fd3f062877cef",
-    "bytes": 554359
+    "sha256": "396ff83dde03e8dcbd349d68d3b5faaedbbd3b76be9e557584b9a17da6b226d7",
+    "bytes": 575849
   },
   "explainer": {
-    "preparedSha256": "324afee112181617c33e8ae492d106fa6b4e8a42cae9eb646b27bde6c5e9a900",
+    "preparedSha256": "a7f22566980a6ff8380a1fe610822ba3e30343ddd9b0cf02d3f6b49bd4acb82d",
     "dependencies": [
       {
         "kind": "diagram-spec",

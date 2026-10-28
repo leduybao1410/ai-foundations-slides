@@ -7,13 +7,13 @@
   "quality": "showcase",
   "specification": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/candidate.archify.md",
-    "sha256": "cd45d0d0edb3bed226403ce5b5df141457aa132e1792bc940db2676f8c07472d",
-    "bytes": 4334
+    "sha256": "569289de90854fa40cbfcb1973ada142203e461df8ddc84d3a2666a73e151de0",
+    "bytes": 8139
   },
   "artifact": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/topic-02-03.html",
-    "sha256": "7b39d5d8e714f74c3c12ac94db1aa46a9c8c44ba89e9fc6b18127cbcc6b60981",
-    "bytes": 547434
+    "sha256": "d9d2707edf96b9b0c59207fa2ef8b26c97eec939478f8a05aee0f566e194bf3f",
+    "bytes": 572549
   },
   "gates": {
     "validate": "pass",
@@ -21,10 +21,32 @@
     "check": "pass",
     "browser-check": "not-run"
   },
-  "diagnostics": [],
+  "diagnostics": [
+    {
+      "code": "explainer/writing-sentence-length",
+      "severity": "warning",
+      "message": "Sentence has 29 reading units, above the configured en limit of 28.",
+      "subject": {
+        "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-02-03-search-20261026-173000/candidate.archify.md",
+        "line": 114,
+        "component": "prose",
+        "panelId": "worked-example-2"
+      },
+      "evidence": {
+        "reason": "Sentence has 29 reading units, above the configured en limit of 28.",
+        "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+        "rule": "sentence-length",
+        "units": 29,
+        "limit": 28
+      },
+      "supportedFixes": [
+        "Split at a logical action or condition boundary while preserving qualifications and causal links."
+      ]
+    }
+  ],
   "diagnosticSummary": {
-    "total": 0,
-    "shown": 0,
+    "total": 1,
+    "shown": 1,
     "truncated": false
   },
   "evidence": {
@@ -42,7 +64,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 801,
+  "durationMs": 756,
   "browserCheck": {
     "requested": false,
     "ran": false

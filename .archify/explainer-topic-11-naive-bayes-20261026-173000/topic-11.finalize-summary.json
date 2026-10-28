@@ -7,13 +7,13 @@
   "quality": "showcase",
   "specification": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
-    "sha256": "5ea97d4ee1272f9cfdd27f674ebd2d07b445148500f9511cbf7524e82c5877a0",
-    "bytes": 3794
+    "sha256": "72d15ccd0db83bc974d97bd2aa1725daefa20a164827bee2067b3c5c89bddbf5",
+    "bytes": 6723
   },
   "artifact": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
-    "sha256": "b2f2a38972c349f8c3c3dd31fa171d8cc360cd144cbbb297f25fd3f062877cef",
-    "bytes": 554359
+    "sha256": "396ff83dde03e8dcbd349d68d3b5faaedbbd3b76be9e557584b9a17da6b226d7",
+    "bytes": 575849
   },
   "gates": {
     "validate": "pass",
@@ -21,10 +21,53 @@
     "check": "pass",
     "browser-check": "not-run"
   },
-  "diagnostics": [],
+  "diagnostics": [
+    {
+      "code": "explainer/writing-sentence-length",
+      "severity": "warning",
+      "message": "Sentence has 43 reading units, above the configured en limit of 28.",
+      "subject": {
+        "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
+        "line": 89,
+        "component": "prose",
+        "panelId": "worked-example-1"
+      },
+      "evidence": {
+        "reason": "Sentence has 43 reading units, above the configured en limit of 28.",
+        "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+        "rule": "sentence-length",
+        "units": 43,
+        "limit": 28
+      },
+      "supportedFixes": [
+        "Split at a logical action or condition boundary while preserving qualifications and causal links."
+      ]
+    },
+    {
+      "code": "explainer/writing-sentence-length",
+      "severity": "warning",
+      "message": "Sentence has 32 reading units, above the configured en limit of 28.",
+      "subject": {
+        "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
+        "line": 107,
+        "component": "prose",
+        "panelId": "worked-example-2"
+      },
+      "evidence": {
+        "reason": "Sentence has 32 reading units, above the configured en limit of 28.",
+        "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+        "rule": "sentence-length",
+        "units": 32,
+        "limit": 28
+      },
+      "supportedFixes": [
+        "Split at a logical action or condition boundary while preserving qualifications and causal links."
+      ]
+    }
+  ],
   "diagnosticSummary": {
-    "total": 0,
-    "shown": 0,
+    "total": 2,
+    "shown": 2,
     "truncated": false
   },
   "evidence": {
@@ -42,7 +85,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 786,
+  "durationMs": 758,
   "browserCheck": {
     "requested": false,
     "ran": false

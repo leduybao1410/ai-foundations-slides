@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-27T17:08:48.042Z",
+  "startedAt": "2026-10-28T04:12:22.355Z",
   "specification": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
-    "sha256": "5ea97d4ee1272f9cfdd27f674ebd2d07b445148500f9511cbf7524e82c5877a0",
-    "bytes": 3794
+    "sha256": "72d15ccd0db83bc974d97bd2aa1725daefa20a164827bee2067b3c5c89bddbf5",
+    "bytes": 6723
   },
   "artifact": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
-    "sha256": "b2f2a38972c349f8c3c3dd31fa171d8cc360cd144cbbb297f25fd3f062877cef",
-    "bytes": 554359
+    "sha256": "396ff83dde03e8dcbd349d68d3b5faaedbbd3b76be9e557584b9a17da6b226d7",
+    "bytes": 575849
   },
   "stages": {
     "browser-check": {
@@ -42,8 +42,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "5ea97d4ee1272f9cfdd27f674ebd2d07b445148500f9511cbf7524e82c5877a0",
-          "bytes": 3794
+          "sha256": "72d15ccd0db83bc974d97bd2aa1725daefa20a164827bee2067b3c5c89bddbf5",
+          "bytes": 6723
         },
         "validation": {
           "checksPassed": 4,
@@ -58,7 +58,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 450,
+      "durationMs": 436,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
@@ -72,14 +72,14 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "60ed45f3-5f99-48e0-8754-09cfff46bf3e",
+        "receiptId": "f6256eee-dfe4-4412-88a6-cae68fc80acc",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
         "output": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
         "explainer": {
-          "preparedSha256": "324afee112181617c33e8ae492d106fa6b4e8a42cae9eb646b27bde6c5e9a900",
+          "preparedSha256": "a7f22566980a6ff8380a1fe610822ba3e30343ddd9b0cf02d3f6b49bd4acb82d",
           "dependencies": [
             {
               "kind": "diagram-spec",
@@ -91,12 +91,12 @@
           ]
         },
         "specification": {
-          "sha256": "5ea97d4ee1272f9cfdd27f674ebd2d07b445148500f9511cbf7524e82c5877a0",
-          "bytes": 3794
+          "sha256": "72d15ccd0db83bc974d97bd2aa1725daefa20a164827bee2067b3c5c89bddbf5",
+          "bytes": 6723
         },
         "artifact": {
-          "sha256": "b2f2a38972c349f8c3c3dd31fa171d8cc360cd144cbbb297f25fd3f062877cef",
-          "bytes": 554359
+          "sha256": "396ff83dde03e8dcbd349d68d3b5faaedbbd3b76be9e557584b9a17da6b226d7",
+          "bytes": 575849
         },
         "validation": {
           "checksPassed": 4,
@@ -106,6 +106,50 @@
           "errors": 0,
           "warnings": 0
         },
+        "diagnostics": [
+          {
+            "code": "explainer/writing-sentence-length",
+            "severity": "warning",
+            "message": "Sentence has 43 reading units, above the configured en limit of 28.",
+            "subject": {
+              "line": 89,
+              "component": "prose",
+              "panelId": "worked-example-1",
+              "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md"
+            },
+            "evidence": {
+              "rule": "sentence-length",
+              "reason": "Sentence has 43 reading units, above the configured en limit of 28.",
+              "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+              "units": 43,
+              "limit": 28
+            },
+            "supportedFixes": [
+              "Split at a logical action or condition boundary while preserving qualifications and causal links."
+            ]
+          },
+          {
+            "code": "explainer/writing-sentence-length",
+            "severity": "warning",
+            "message": "Sentence has 32 reading units, above the configured en limit of 28.",
+            "subject": {
+              "line": 107,
+              "component": "prose",
+              "panelId": "worked-example-2",
+              "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md"
+            },
+            "evidence": {
+              "rule": "sentence-length",
+              "reason": "Sentence has 32 reading units, above the configured en limit of 28.",
+              "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+              "units": 32,
+              "limit": 28
+            },
+            "supportedFixes": [
+              "Split at a logical action or condition boundary while preserving qualifications and causal links."
+            ]
+          }
+        ],
         "update": {
           "status": "unavailable",
           "installedVersion": null,
@@ -117,12 +161,13 @@
           "noticeText": null,
           "reason": "disabled"
         }
-      }
+      },
+      "stderr": "archify: Sentence has 43 reading units, above the configured en limit of 28.\narchify: Sentence has 32 reading units, above the configured en limit of 28."
     },
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 202,
+      "durationMs": 193,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
@@ -135,15 +180,15 @@
         "file": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "b2f2a38972c349f8c3c3dd31fa171d8cc360cd144cbbb297f25fd3f062877cef",
-          "bytes": 554359
+          "sha256": "396ff83dde03e8dcbd349d68d3b5faaedbbd3b76be9e557584b9a17da6b226d7",
+          "bytes": 575849
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "52 unique DOM IDs"
+              "70 unique DOM IDs"
             ]
           },
           {
@@ -180,7 +225,7 @@
               "id": "bayes-pipeline",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-q6s9Zz/child.html",
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-X1uPrY/child.html",
                 "artifact": {
                   "sha256": "c3455470635f76e47f67ca699e56ad936df8ea31091b198c9b1b52450e5bc702",
                   "bytes": 833842
@@ -307,7 +352,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "60ed45f3-5f99-48e0-8754-09cfff46bf3e"
+        "deliveryReceiptId": "f6256eee-dfe4-4412-88a6-cae68fc80acc"
       }
     }
   },
@@ -315,14 +360,57 @@
     "requested": false,
     "ran": false
   },
-  "diagnostics": [],
+  "diagnostics": [
+    {
+      "code": "explainer/writing-sentence-length",
+      "severity": "warning",
+      "message": "Sentence has 43 reading units, above the configured en limit of 28.",
+      "subject": {
+        "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
+        "line": 89,
+        "component": "prose",
+        "panelId": "worked-example-1"
+      },
+      "evidence": {
+        "reason": "Sentence has 43 reading units, above the configured en limit of 28.",
+        "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+        "rule": "sentence-length",
+        "units": 43,
+        "limit": 28
+      },
+      "supportedFixes": [
+        "Split at a logical action or condition boundary while preserving qualifications and causal links."
+      ]
+    },
+    {
+      "code": "explainer/writing-sentence-length",
+      "severity": "warning",
+      "message": "Sentence has 32 reading units, above the configured en limit of 28.",
+      "subject": {
+        "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/candidate.archify.md",
+        "line": 107,
+        "component": "prose",
+        "panelId": "worked-example-2"
+      },
+      "evidence": {
+        "reason": "Sentence has 32 reading units, above the configured en limit of 28.",
+        "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+        "rule": "sentence-length",
+        "units": 32,
+        "limit": 28
+      },
+      "supportedFixes": [
+        "Split at a logical action or condition boundary while preserving qualifications and causal links."
+      ]
+    }
+  ],
   "evidence": {
     "receipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.finalize.json",
     "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-11-naive-bayes-20261026-173000/topic-11.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-27T17:08:48.829Z",
-  "durationMs": 786,
+  "finishedAt": "2026-10-28T04:12:23.114Z",
+  "durationMs": 758,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

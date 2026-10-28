@@ -7,13 +7,13 @@
   "quality": "showcase",
   "specification": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/candidate.archify.md",
-    "sha256": "5caec53cdfdba0ddddd25da05eab4c5692418bc93e50a685bf5f66116589d99f",
-    "bytes": 3880
+    "sha256": "3a1e4316a3d1436a10cfbd0f96ac01aa43fdc740e22e9b53745fc805980d35b0",
+    "bytes": 6694
   },
   "artifact": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/topic-09.html",
-    "sha256": "2b84a3a4213e13d1d0155f7267687baa50177ce6889b5f7325931a372fd682ae",
-    "bytes": 917158
+    "sha256": "1fd216302792855ae4e231cf21a69f31c268502275af8a90a05313613f89b1f3",
+    "bytes": 938298
   },
   "gates": {
     "validate": "pass",
@@ -21,10 +21,53 @@
     "check": "pass",
     "browser-check": "not-run"
   },
-  "diagnostics": [],
+  "diagnostics": [
+    {
+      "code": "explainer/writing-sentence-length",
+      "severity": "warning",
+      "message": "Sentence has 31 reading units, above the configured en limit of 28.",
+      "subject": {
+        "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/candidate.archify.md",
+        "line": 91,
+        "component": "list",
+        "panelId": "worked-example-1"
+      },
+      "evidence": {
+        "reason": "Sentence has 31 reading units, above the configured en limit of 28.",
+        "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+        "rule": "sentence-length",
+        "units": 31,
+        "limit": 28
+      },
+      "supportedFixes": [
+        "Split at a logical action or condition boundary while preserving qualifications and causal links."
+      ]
+    },
+    {
+      "code": "explainer/writing-sentence-length",
+      "severity": "warning",
+      "message": "Sentence has 32 reading units, above the configured en limit of 28.",
+      "subject": {
+        "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/candidate.archify.md",
+        "line": 103,
+        "component": "list",
+        "panelId": "worked-example-2"
+      },
+      "evidence": {
+        "reason": "Sentence has 32 reading units, above the configured en limit of 28.",
+        "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+        "rule": "sentence-length",
+        "units": 32,
+        "limit": 28
+      },
+      "supportedFixes": [
+        "Split at a logical action or condition boundary while preserving qualifications and causal links."
+      ]
+    }
+  ],
   "diagnosticSummary": {
-    "total": 0,
-    "shown": 0,
+    "total": 2,
+    "shown": 2,
     "truncated": false
   },
   "evidence": {
@@ -42,7 +85,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 989,
+  "durationMs": 997,
   "browserCheck": {
     "requested": false,
     "ran": false

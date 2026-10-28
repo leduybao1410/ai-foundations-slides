@@ -11,6 +11,27 @@ Greedy chỉ nhìn `h(n)`, còn `A*` xét `f(n)=g(n)+h(n)`. Dùng lại đồ th
 @source slides04 title="Topic 04 · slides 4–12, 15–25, 28–30"
 @source slides0203 title="Topic 02_03 · đồ thị trạng thái và UCS"
 
+## Onboarding · Định hướng bài học {#onboarding span=12}
+
+**Trước khi bắt đầu**
+
+- Ôn UCS và hàng đợi ưu tiên ở Topic 02_03.
+- Gọi g(n) là chi phí đã đi tới n, h(n) là ước lượng còn lại và f(n)=g(n)+h(n) là độ ưu tiên của A\*.
+
+**Điểm cần lưu ý**
+
+- Greedy chỉ so h; A\* so g+h. Không lấy nút có h nhỏ nhất thay cho nút có f nhỏ nhất.
+- Admissible nghĩa là h(n) không vượt h\*(n), với h\*(n) là chi phí tối ưu thật còn lại.
+- Khi có trạng thái lặp, cần xử lý đường tốt hơn; không dừng ngay lúc vừa sinh đích.
+
+**Sau bài học, bạn có thể**
+
+- Tính g, h, f và chọn nút tiếp theo của Greedy hoặc A\* từ frontier.
+- Kiểm tra tính admissible khi đã biết chi phí thật tới đích.
+- Giải thích bằng phản ví dụ vì sao heuristic phóng đại có thể làm mất lời giải tối ưu.
+
+Nguồn khái niệm: Topic 04 · slides 15–25. Các tình huống bổ sung bên dưới là ví dụ giải thích, không phải dữ kiện nguyên văn trong slide.
+
 ## Heuristic dẫn hướng tìm kiếm {#heuristic}
 
 `h(n)` là ước lượng từ trạng thái `n` đến đích. Trong ví dụ, S→A (1), S→B (4), A→C (1), C→G (3), B→G (2). Giá trị thật tối ưu còn lại là 5, 4, 2 và 3 tại S, A, B và C; chọn `h(S)=4`, `h(A)=3`, `h(B)=2`, `h(C)=2`, `h(G)=0` đều không vượt giá trị thật.[](source:slides04)
@@ -58,6 +79,36 @@ Heuristic admissible thỏa `h(n) ≤ h*(n)`: ước lượng không vượt chi
 
 `IDA*` giảm bộ nhớ bằng cách lặp tìm kiếm DFS với ngưỡng `f`; nó có thể duyệt lại trạng thái ở vòng sau.[](source:slides04)
 
+## Ví dụ 1 · Chọn nút từ một frontier cụ thể {#worked-example-1}
+
+Ví dụ giải thích thêm · Topic 04 · slides 15–25.
+
+Frontier có ba nút A, B, C. Các cặp (g,h) lần lượt là A=(2,6), B=(5,1), C=(3,2); các đại lượng dùng cùng đơn vị chi phí.
+
+1. Tính f(A)=2+6=8, f(B)=5+1=6 và f(C)=3+2=5.
+2. Greedy chọn B vì h(B)=1 là nhỏ nhất.
+3. A\* chọn C vì f(C)=5 là nhỏ nhất; B đứng kế tiếp nếu frontier không đổi.
+
+**Kết luận:** Ưu tiên mở rộng khác nhau dù cùng nhìn một frontier. Chỉ các số này chưa đủ kết luận đường cuối cùng có tối ưu hay không.
+
+## Ví dụ 2 · Heuristic quá lớn che mất đường rẻ {#worked-example-2}
+
+Ví dụ giải thích thêm · Topic 04 · slides 15–25.
+
+Có S→A chi phí 1, A→G chi phí 1 và S→G chi phí 3. Chọn h(A)=5, h(G)=0; chi phí thật từ A tới G chỉ là 1.
+
+1. Sau khi mở S, A có f=1+5=6, còn đường trực tiếp tới G có f=3+0=3.
+2. A\* lấy G trước A và trả đường trực tiếp có chi phí 3.
+3. Nhưng S→A→G chỉ tốn 2; h(A)=5 đã vượt h\*(A)=1.
+
+**Kết luận:** Dừng đúng lúc lấy đích vẫn không cứu được heuristic phóng đại; điều kiện về h là thiết yếu cho bảo đảm tối ưu.
+
 ## Thử thách luyện tập: Dẫn đường với A\* {#challenge-practice}
 
 Tính f = g + h và chọn nút tiếp theo trong frontier. Bấm “Chơi thử thách” bên dưới để hoàn thành ba bước và nhận phản hồi. Đây là ví dụ diễn giải thêm; dữ kiện của trò chơi được đặt riêng cho việc luyện tập.
+
+## Phòng thí nghiệm: Đối chiếu Greedy và A\* {#lab-guide}
+
+Theo dõi g(n), h(n), f(n) và chạy hai thuật toán theo từng lượt lấy nút. Tự chỉnh chi phí cạnh, heuristic; đối chiếu h với chi phí thật h\* và quan sát điều kiện chấp nhận được, tính nhất quán. Lượt phát có thể quay lui, phát lại và tiếp tục từ vị trí đã lưu.
+
+Mở phòng thí nghiệm được đặt ở đầu trang để bắt đầu tương tác. Dữ kiện là ví dụ diễn giải thêm để luyện tập; kiến thức liên quan: Topic 04 · slides 15–25. Tiến độ, câu trả lời đã đạt, dữ kiện tự chỉnh và huy hiệu được lưu trên trình duyệt bằng localStorage; có thể đóng trang rồi tiếp tục. Điểm thử thách vẫn được lưu riêng.

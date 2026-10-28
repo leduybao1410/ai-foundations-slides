@@ -8,6 +8,7 @@
 | [AI-MEMORY-GUIDELINES.md](AI-MEMORY-GUIDELINES.md) | Cách truy xuất, trả lời và cập nhật ghi chú |
 | [lesson manifest](../lessons/manifest.json) | 12 bài Archify, đầu ra local, ghi chú và trang PDF nguồn |
 | [lesson index](../lessons/index.html) | Mục lục offline tới minh họa, ghi chú và PDF |
+| [phòng thí nghiệm tương tác](../lessons/index.html) | Ba lab: DFS/BFS/UCS, Greedy/A*, địa hình local search; phát từng bước, tự chỉnh dữ kiện và lưu tiến độ lâu dài trên trình duyệt |
 | [thử thách luyện tập](../lessons/index.html) | 12 thử thách theo topic, điểm và tiến độ lưu trên trình duyệt |
 | [topic-01-introduction.md](topics/topic-01-introduction.md) | AI, bốn quan điểm, tác nhân, lịch sử và ứng dụng |
 | [topic-02-03-search.md](topics/topic-02-03-search.md) | Mô hình bài toán tìm kiếm, DFS, BFS, UCS và tìm kiếm mù |
@@ -24,6 +25,7 @@
 
 ## Quy ước
 
-- Mỗi topic là một đơn vị truy xuất độc lập, có mục tiêu, khái niệm, ví dụ, điểm dễ nhầm, tóm tắt và nguồn slide.
+- Mỗi topic là một đơn vị truy xuất độc lập, có onboarding (kiến thức đầu vào, điểm cần lưu ý, kết quả học tập), khái niệm, ít nhất hai ví dụ bổ sung có lời giải, điểm dễ nhầm, tóm tắt và nguồn slide.
+- Cả 12 bài Archify có mục “Onboarding · Định hướng bài học” ở đầu nội dung, trước phòng thí nghiệm nếu có; ví dụ bổ sung được đánh số và ghi rõ nguồn khái niệm. Nội dung tương ứng được giữ trong từng topic note.
 - Khi trả lời, ưu tiên ghi chú này để định hướng rồi kiểm tra PDF gốc tại trang đã dẫn.
 - Ví dụ được gắn nhãn là ví dụ giải thích; không nhầm chúng với ví dụ nguyên văn trong slide.

@@ -10,6 +10,27 @@ Tìm kiếm cục bộ tập trung vào cấu hình tốt, không cần giữ c�
 @meta locale=vi
 @source slides06 title="Topic 06 · slides 4–18, 19–34"
 
+## Onboarding · Định hướng bài học {#onboarding span=12}
+
+**Trước khi bắt đầu**
+
+- Phân biệt tìm một cấu hình tốt với tìm đường đi rẻ nhất ở Topic 02_03–04.
+- Xác định láng giềng và chiều tối ưu của hàm đánh giá; các ví dụ trong bài dùng điểm càng cao càng tốt.
+
+**Điểm cần lưu ý**
+
+- Không còn láng giềng tốt hơn chưa có nghĩa đã đạt tối ưu toàn cục.
+- Bước xấu hơn có thể được simulated annealing chấp nhận; hill climbing cơ bản không chủ động làm vậy.
+- GA cần biểu diễn gene và fitness phù hợp; lai ghép hoặc đột biến không bảo đảm con tốt hơn cha mẹ.
+
+**Sau bài học, bạn có thể**
+
+- Chọn bước leo đồi và nhận diện điểm kẹt trên một tập láng giềng nhỏ.
+- Giải thích vai trò của khởi động lại và luyện thép khi bị kẹt.
+- Thực hiện một lần lai ghép, đột biến và đánh giá fitness của chuỗi gene đơn giản.
+
+Nguồn khái niệm: Topic 06 · slides 4–6, 14–18, 19–27. Các tình huống bổ sung bên dưới là ví dụ giải thích, không phải dữ kiện nguyên văn trong slide.
+
 ## Hill climbing có thể dừng quá sớm {#hill-climb}
 
 Ví dụ giải thích thêm: điểm càng cao càng tốt. Ở S, chọn A đạt 6 thay vì B đạt 5. Tại A không còn bước tốt hơn, nên thuật toán dừng ở cực trị địa phương. Đường qua B có thể tới G với điểm 10.[](source:slides06)
@@ -82,6 +103,36 @@ GA giữ một quần thể lời giải. Mỗi vòng đánh giá fitness, chọ
 
 Hill climbing đi đến láng giềng tốt hơn và dừng khi bị kẹt. Simulated annealing có thể nhận bước xấu. Genetic algorithm tiến hóa quần thể thay vì một cấu hình đơn. Các phương pháp này tìm cấu hình tốt; đường đi đến đó không phải mục tiêu.[](source:slides06)
 
+## Ví dụ 1 · Xếp lịch tốt hơn nhưng vẫn bị kẹt {#worked-example-1}
+
+Ví dụ giải thích thêm · Topic 06 · slides 4–6, 14–18, 19–27.
+
+Một lịch học có điểm 8. Hai láng giềng trực tiếp đạt 9 và 7; lịch điểm 9 chỉ có láng giềng đạt 8 hoặc 7. Ở một vùng khác có lịch đạt 12.
+
+1. Hill climbing chọn lịch điểm 9 vì đây là cải thiện lớn nhất từ 8.
+2. Tại lịch điểm 9, không có láng giềng tốt hơn nên dừng.
+3. Khởi động lại ở vùng khác có thể tìm lịch 12; không có bảo đảm một lần khởi động lại sẽ trúng vùng đó.
+
+**Kết luận:** Điểm 9 là cực đại địa phương theo moveset đã cho, không phải tối ưu toàn cục; cách định nghĩa láng giềng ảnh hưởng nơi bị kẹt.
+
+## Ví dụ 2 · Lai ghép hai chuỗi bốn bit {#worked-example-2}
+
+Ví dụ giải thích thêm · Topic 06 · slides 4–6, 14–18, 19–27.
+
+Mỗi cá thể là chuỗi bốn bit, fitness bằng số bit 1. Hai cha mẹ được chọn là 1100 và 0011; cắt sau bit thứ hai.
+
+1. Tách cha mẹ thành 11/00 và 00/11 rồi trao đổi phần đuôi.
+2. Hai con là 1111 có fitness 4 và 0000 có fitness 0; hai cha mẹ đều có fitness 2.
+3. Nếu một lần đột biến lật bit thứ ba của 0000 từ 0 thành 1, con trở thành 0010 với fitness 1.
+
+**Kết luận:** Lai ghép có thể tạo cả con tốt hơn và con kém hơn; đột biến tạo biến thể mới. Đây là biểu diễn đồ chơi, không phải mã hóa bài toán 8 hậu.
+
 ## Thử thách luyện tập: Leo đồi và tiến hóa {#challenge-practice}
 
 Tìm hàng xóm tốt hơn, nhận diện điểm kẹt và sắp xếp vòng tiến hóa. Bấm “Chơi thử thách” bên dưới để hoàn thành ba bước và nhận phản hồi. Đây là ví dụ diễn giải thêm; dữ kiện của trò chơi được đặt riêng cho việc luyện tập.
+
+## Phòng thí nghiệm: Khám phá địa hình điểm số {#lab-guide}
+
+Di chuyển trên lưới điểm 7×7 được biểu diễn bằng mặt 3D hoặc bản đồ 2D. So sánh leo đồi, năm lần khởi động lại và luyện thép. Ví dụ tối đa hóa Eval: với Δ = Eval(mới) − Eval(hiện tại) < 0, xác suất nhận là exp(Δ/T); T là nhiệt độ. Ở Δ=−2, T=4, xác suất khoảng 0,607 nên mẫu u=0,4 được chấp nhận.
+
+Mở phòng thí nghiệm được đặt ở đầu trang để bắt đầu tương tác. Dữ kiện là ví dụ diễn giải thêm để luyện tập; kiến thức liên quan: Topic 06 · slides 4–6, 14–18. Tiến độ, câu trả lời đã đạt, dữ kiện tự chỉnh và huy hiệu được lưu trên trình duyệt bằng localStorage; có thể đóng trang rồi tiếp tục. Điểm thử thách vẫn được lưu riêng.

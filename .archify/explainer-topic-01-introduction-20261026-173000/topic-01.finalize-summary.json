@@ -7,13 +7,13 @@
   "quality": "showcase",
   "specification": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-01-introduction-20261026-173000/candidate.archify.md",
-    "sha256": "feca5031f05791c070fd65134a16394ac86797ab5ba69f9c1fd48450a002c40b",
-    "bytes": 3229
+    "sha256": "878a759165548afbdb95660f3aa6cdbd8986eedb24c86673ddcb2576079b91f9",
+    "bytes": 5944
   },
   "artifact": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-01-introduction-20261026-173000/topic-01.html",
-    "sha256": "0c93532d12390a6042566144fb794fc7d1f10f84a5a0fd4077d9f9b03fe165a7",
-    "bytes": 535520
+    "sha256": "91fd37282f0c1742cfb48b2783470afdd71291cab656acab322f89aeb3d6f5b5",
+    "bytes": 553795
   },
   "gates": {
     "validate": "pass",
@@ -42,7 +42,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 837,
+  "durationMs": 747,
   "browserCheck": {
     "requested": false,
     "ran": false

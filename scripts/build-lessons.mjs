@@ -146,18 +146,26 @@ for (const lesson of manifest.lessons) {
     throw new Error(`Archify failed for Topic ${lesson.topic} (exit ${result.status ?? 'unknown'}).\n${details}`);
   }
   let generated = await readFile(output, 'utf8');
-  if (lesson.lab) {
-    const labAnchor = '<main id="board">';
-    if (generated.split(labAnchor).length !== 2) throw new Error(`Cannot locate lab anchor for ${lesson.id}`);
-    generated = generated.replace(labAnchor, labAnchor + renderLab(lesson));
-  }
+  const navigationAnchor = '<header class="masthead">';
+  if (generated.split(navigationAnchor).length !== 2) throw new Error(`Cannot locate a unique lesson header for ${lesson.id}`);
+  const homeHref = localHref(path.dirname(lesson.output), 'lessons/index.html');
+  const navigation = `<nav class="course-lesson-nav" aria-label="Điều hướng bài học"><a class="course-lesson-home" href="${escapeHtml(homeHref)}" rel="home"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m10 5-7 7 7 7M3 12h18"/></svg><span>Về trang chủ</span></a></nav>`;
+  generated = generated.replace(navigationAnchor, navigation + navigationAnchor);
+  const onboarding = generated.match(/<section\b[^>]*\bid="onboarding"[^>]*>[\s\S]*?<\/section>/g) || [];
+  const mainAnchor = '<main id="board">';
+  if (onboarding.length !== 1 || generated.split(mainAnchor).length !== 2) throw new Error(`Cannot locate a unique onboarding section and main for ${lesson.id}`);
+  // Keep the introduction and dynamically sized lab in normal flow. Archify's
+  // measured grid only places its own panels and cannot reserve space for a lab.
+  const introduction = onboarding[0].replace('<section ', '<section style="margin-bottom:20px" ');
+  generated = generated.replace(onboarding[0], '').replace(mainAnchor, mainAnchor + introduction + (lesson.lab ? renderLab(lesson) : ''));
   const anchor = '</main><footer>';
   if (generated.split(anchor).length !== 2) throw new Error(`Cannot locate a unique lesson footer for ${lesson.id}`);
   const challengeHref = `${localHref(path.dirname(lesson.output), 'lessons/challenge.html')}?topic=${encodeURIComponent(lesson.id)}`;
   const challengeCta = `<section aria-label="Thử thách luyện tập" style="margin:24px auto;padding:22px;max-width:1000px;border:1px solid #b9d9d0;border-radius:16px;background:#edf8f3;color:#153a42;font-family:system-ui,sans-serif"><h2 style="margin:0 0 8px">Sẵn sàng thử sức?</h2><p>Áp dụng kiến thức qua ba bước, nhận phản hồi và lưu điểm cao nhất trên trình duyệt này.</p><a href="${escapeHtml(challengeHref)}" style="display:inline-block;padding:12px 18px;border-radius:10px;background:#086c64;color:white;font-weight:700;text-decoration:none">Chơi thử thách →</a></section>`;
   const labHead = lesson.lab ? `<link rel="stylesheet" href="${escapeHtml(localHref(path.dirname(lesson.output), 'lessons/labs/labs.css'))}">` : '';
   const labScript = lesson.lab ? `<script defer src="${escapeHtml(localHref(path.dirname(lesson.output), 'lessons/labs/bootstrap.js'))}"></script>` : '';
-  const chatMeta = labHead + `<meta name="course-chat-topic" content="${escapeHtml(lesson.id)}"><link rel="stylesheet" href="${escapeHtml(localHref(path.dirname(lesson.output), 'lessons/chat-widget.css'))}">`;
+  const navigationHead = `<link rel="stylesheet" href="${escapeHtml(localHref(path.dirname(lesson.output), 'lessons/lesson-navigation.css'))}">`;
+  const chatMeta = navigationHead + labHead + `<meta name="course-chat-topic" content="${escapeHtml(lesson.id)}"><link rel="stylesheet" href="${escapeHtml(localHref(path.dirname(lesson.output), 'lessons/chat-widget.css'))}">`;
   const chatScripts = labScript + `<script defer src="${escapeHtml(localHref(path.dirname(lesson.output), 'lessons/lesson-catalog.js'))}"></script><script defer src="${escapeHtml(localHref(path.dirname(lesson.output), 'lessons/chat-widget.js'))}"></script>`;
   if (generated.split('</head>').length !== 2 || !generated.endsWith('</script></body></html>')) throw new Error(`Cannot locate the unique document head and body ending for ${lesson.id}`);
   const withChatHead = generated.replace('</head>', `${chatMeta}</head>`);

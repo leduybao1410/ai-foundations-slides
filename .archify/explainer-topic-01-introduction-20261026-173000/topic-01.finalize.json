@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-27T17:08:34.514Z",
+  "startedAt": "2026-10-28T04:12:09.232Z",
   "specification": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-01-introduction-20261026-173000/candidate.archify.md",
-    "sha256": "feca5031f05791c070fd65134a16394ac86797ab5ba69f9c1fd48450a002c40b",
-    "bytes": 3229
+    "sha256": "878a759165548afbdb95660f3aa6cdbd8986eedb24c86673ddcb2576079b91f9",
+    "bytes": 5944
   },
   "artifact": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-01-introduction-20261026-173000/topic-01.html",
-    "sha256": "0c93532d12390a6042566144fb794fc7d1f10f84a5a0fd4077d9f9b03fe165a7",
-    "bytes": 535520
+    "sha256": "91fd37282f0c1742cfb48b2783470afdd71291cab656acab322f89aeb3d6f5b5",
+    "bytes": 553795
   },
   "stages": {
     "browser-check": {
@@ -42,8 +42,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "feca5031f05791c070fd65134a16394ac86797ab5ba69f9c1fd48450a002c40b",
-          "bytes": 3229
+          "sha256": "878a759165548afbdb95660f3aa6cdbd8986eedb24c86673ddcb2576079b91f9",
+          "bytes": 5944
         },
         "validation": {
           "checksPassed": 4,
@@ -58,7 +58,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 494,
+      "durationMs": 423,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
@@ -72,14 +72,14 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "ed67e1c8-709c-4f19-a1bd-1817b120829b",
+        "receiptId": "97001e49-3c34-4a83-be79-d35d097b7cd2",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-01-introduction-20261026-173000/candidate.archify.md",
         "output": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-01-introduction-20261026-173000/topic-01.html",
         "explainer": {
-          "preparedSha256": "ed496efac4a99b504ed27cd7cfc41f901299d9e5e23126633a0e072f515f7f75",
+          "preparedSha256": "47005b06fa7ec37d310c658a0bde61a76640e9f12c1656bb7dc122b7756ea039",
           "dependencies": [
             {
               "kind": "diagram-spec",
@@ -91,12 +91,12 @@
           ]
         },
         "specification": {
-          "sha256": "feca5031f05791c070fd65134a16394ac86797ab5ba69f9c1fd48450a002c40b",
-          "bytes": 3229
+          "sha256": "878a759165548afbdb95660f3aa6cdbd8986eedb24c86673ddcb2576079b91f9",
+          "bytes": 5944
         },
         "artifact": {
-          "sha256": "0c93532d12390a6042566144fb794fc7d1f10f84a5a0fd4077d9f9b03fe165a7",
-          "bytes": 535520
+          "sha256": "91fd37282f0c1742cfb48b2783470afdd71291cab656acab322f89aeb3d6f5b5",
+          "bytes": 553795
         },
         "validation": {
           "checksPassed": 4,
@@ -122,7 +122,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 206,
+      "durationMs": 195,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
@@ -135,15 +135,15 @@
         "file": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-01-introduction-20261026-173000/topic-01.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "0c93532d12390a6042566144fb794fc7d1f10f84a5a0fd4077d9f9b03fe165a7",
-          "bytes": 535520
+          "sha256": "91fd37282f0c1742cfb48b2783470afdd71291cab656acab322f89aeb3d6f5b5",
+          "bytes": 553795
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "42 unique DOM IDs"
+              "60 unique DOM IDs"
             ]
           },
           {
@@ -180,7 +180,7 @@
               "id": "agent-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-rtzEGb/child.html",
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-p1gcyE/child.html",
                 "artifact": {
                   "sha256": "56177ce64b2c8a4b4f90a187e76262c8acfabd5a46b1a3bb1921d342b136d969",
                   "bytes": 831786
@@ -307,7 +307,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "ed67e1c8-709c-4f19-a1bd-1817b120829b"
+        "deliveryReceiptId": "97001e49-3c34-4a83-be79-d35d097b7cd2"
       }
     }
   },
@@ -321,8 +321,8 @@
     "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-01-introduction-20261026-173000/topic-01.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-27T17:08:35.352Z",
-  "durationMs": 837,
+  "finishedAt": "2026-10-28T04:12:09.979Z",
+  "durationMs": 747,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

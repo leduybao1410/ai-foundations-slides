@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-27T17:08:42.511Z",
+  "startedAt": "2026-10-28T04:12:16.904Z",
   "specification": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/candidate.archify.md",
-    "sha256": "d31e046f0f38356dcf9e6c17f5e7b64fda3de98f6f5059ceedf08d49bab2f097",
-    "bytes": 3258
+    "sha256": "1dca7d1dcdcae2ea8b2fd3117fed3aa06d57af49c3a507b8b68cfa03ece087eb",
+    "bytes": 5661
   },
   "artifact": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/topic-07.html",
-    "sha256": "4fca7a38dc0c540735eeb5dfbf8a9f16f381f6231b7c9700c8c588a4badf6e6f",
-    "bytes": 519181
+    "sha256": "12946966109e4d9ff57e7502f7ece904886815f67ad3f2fe0b351b01860828f4",
+    "bytes": 536595
   },
   "stages": {
     "browser-check": {
@@ -42,8 +42,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "d31e046f0f38356dcf9e6c17f5e7b64fda3de98f6f5059ceedf08d49bab2f097",
-          "bytes": 3258
+          "sha256": "1dca7d1dcdcae2ea8b2fd3117fed3aa06d57af49c3a507b8b68cfa03ece087eb",
+          "bytes": 5661
         },
         "validation": {
           "checksPassed": 4,
@@ -58,7 +58,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 445,
+      "durationMs": 437,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
@@ -72,14 +72,14 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "651d885b-35a7-4bb9-a536-018667aa8398",
+        "receiptId": "0a12cd51-5465-435b-bdd5-788e19dda1bb",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/candidate.archify.md",
         "output": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/topic-07.html",
         "explainer": {
-          "preparedSha256": "4a40aed1e12ba1ac9dc947928724a7d614d1058ae931a9d40e071c8089555016",
+          "preparedSha256": "6e7329a4809b5627fb1fbad5ac8535e392d80c22020aafceb56571055cf8369b",
           "dependencies": [
             {
               "kind": "diagram-spec",
@@ -91,12 +91,12 @@
           ]
         },
         "specification": {
-          "sha256": "d31e046f0f38356dcf9e6c17f5e7b64fda3de98f6f5059ceedf08d49bab2f097",
-          "bytes": 3258
+          "sha256": "1dca7d1dcdcae2ea8b2fd3117fed3aa06d57af49c3a507b8b68cfa03ece087eb",
+          "bytes": 5661
         },
         "artifact": {
-          "sha256": "4fca7a38dc0c540735eeb5dfbf8a9f16f381f6231b7c9700c8c588a4badf6e6f",
-          "bytes": 519181
+          "sha256": "12946966109e4d9ff57e7502f7ece904886815f67ad3f2fe0b351b01860828f4",
+          "bytes": 536595
         },
         "validation": {
           "checksPassed": 4,
@@ -122,7 +122,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 199,
+      "durationMs": 189,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
@@ -135,15 +135,15 @@
         "file": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/topic-07.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "4fca7a38dc0c540735eeb5dfbf8a9f16f381f6231b7c9700c8c588a4badf6e6f",
-          "bytes": 519181
+          "sha256": "12946966109e4d9ff57e7502f7ece904886815f67ad3f2fe0b351b01860828f4",
+          "bytes": 536595
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "41 unique DOM IDs"
+              "59 unique DOM IDs"
             ]
           },
           {
@@ -180,7 +180,7 @@
               "id": "mp-proof",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-SNBmEa/child.html",
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-mZ5kFL/child.html",
                 "artifact": {
                   "sha256": "4f22b2911117f9d967e799e4fee4bf9d38496c883926527d6124ce4ec7859d7f",
                   "bytes": 827671
@@ -307,7 +307,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "651d885b-35a7-4bb9-a536-018667aa8398"
+        "deliveryReceiptId": "0a12cd51-5465-435b-bdd5-788e19dda1bb"
       }
     }
   },
@@ -321,8 +321,8 @@
     "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/topic-07.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-27T17:08:43.287Z",
-  "durationMs": 776,
+  "finishedAt": "2026-10-28T04:12:17.660Z",
+  "durationMs": 756,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

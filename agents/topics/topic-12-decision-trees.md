@@ -8,6 +8,27 @@ pages: 1-27
 
 # Topic 12 — Cây quyết định và học quy nạp
 
+## Onboarding · Định hướng bài học
+
+**Trước khi bắt đầu**
+
+- Ôn dữ liệu có nhãn và tổng quát hóa ở Topic 11; không cần dùng Naïve Bayes để xây cây.
+- Gọi S là tập mẫu, p là tỉ lệ nhãn dương trong S; entropy H đo độ lẫn nhãn, dùng log cơ số 2.
+
+**Điểm cần lưu ý**
+
+- Entropy bằng 0 nghĩa tập thuần nhãn, không có nghĩa mô hình đúng trên mọi dữ liệu mới.
+- Entropy sau chia phải lấy trung bình có trọng số theo số mẫu của từng nhánh.
+- ID3 chọn information gain lớn nhất ở từng bước; cây khớp dữ liệu huấn luyện chưa chắc tổng quát hóa tốt.
+
+**Sau bài học, bạn có thể**
+
+- Tính entropy của tập nhãn nhỏ và information gain của một cách chia.
+- Chọn thuộc tính theo ID3 và giải thích vì sao một nhánh trở thành lá.
+- Dùng cây dự đoán mẫu mới và viết đường gốc–lá thành luật IF–THEN.
+
+Nguồn khái niệm: Topic 12 · slides 3–16. Các tình huống bổ sung bên dưới là ví dụ giải thích, không phải dữ kiện nguyên văn trong slide.
+
 ## Câu hỏi của chương
 
 Làm thế nào biến các ví dụ gắn nhãn thành một mô hình dễ đọc, giải thích được quyết định? Cây quyết định kiểm tra thuộc tính theo từng nút, rẽ nhánh theo giá trị thuộc tính và trả lớp ở nút lá. (Slides 2–3)
@@ -24,6 +45,30 @@ Làm thế nào biến các ví dụ gắn nhãn thành một mô hình dễ đ�
 ## Ví dụ giải thích thêm
 
 Với dữ liệu quyết định “có đi chơi không?”, thuộc tính đầu tiên có thể là Outlook. Nếu tất cả ví dụ `Overcast` đều là “Yes”, nhánh đó trở thành lá ngay. Với nhánh `Rain`, còn lẫn nhãn nên thử thêm thuộc tính như Wind. Đi theo các nhánh cho một ngày mới sẽ cho dự đoán và lý do dễ giải thích.
+
+## Ví dụ 1 · Tính gain từ bốn mẫu
+
+Ví dụ giải thích thêm · Topic 12 · slides 3–16.
+
+Tập S có bốn mẫu: hai Yes và hai No. Thuộc tính A chia thành hai nhánh, một nhánh hai Yes và một nhánh hai No; thuộc tính B chia thành hai nhánh, mỗi nhánh một Yes và một No.
+
+1. Trước chia, p=1/2 nên H(S)=−(1/2)log₂(1/2)−(1/2)log₂(1/2)=1 bit.
+2. Với A, hai nhánh đều thuần: entropy trung bình=(2/4)×0+(2/4)×0=0, nên Gain(A)=1−0=1 bit.
+3. Với B, mỗi nhánh có entropy 1: entropy trung bình=(2/4)×1+(2/4)×1=1, nên Gain(B)=1−1=0.
+
+**Kết luận:** ID3 chọn A trên bộ dữ kiện này vì A tách nhãn tốt hơn B; phép tính đánh giá cách chia chứ không đo độ chính xác trên mẫu chưa gặp.
+
+## Ví dụ 2 · Dự đoán một ngày mới rồi rút luật
+
+Ví dụ giải thích thêm · Topic 12 · slides 3–16.
+
+Dùng cây thời tiết trong bài: Outlook là tình trạng trời, Humidity là độ ẩm; nhánh Sunny kiểm tra Humidity, Normal đi tới Yes và High đi tới No.
+
+1. Ngày mới có Outlook=Sunny, Humidity=High, Wind=Weak. Từ gốc đi theo Sunny.
+2. Ở nút Humidity, đi theo High đến lá No; thuộc tính Wind không được hỏi trên đường này.
+3. Viết luật tương ứng: IF Outlook=Sunny AND Humidity=High THEN No.
+
+**Kết luận:** Dự đoán No được giải thích bằng đúng đường gốc–lá; không cần đưa mọi thuộc tính của mẫu vào một luật.
 
 ## Dễ nhầm
 

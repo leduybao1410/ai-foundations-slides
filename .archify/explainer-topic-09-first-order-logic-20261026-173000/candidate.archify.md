@@ -10,6 +10,27 @@ Logic mệnh đề xem mỗi câu như một khối đúng/sai. Logic bậc nh�
 @meta locale=vi
 @source slides09 title="Topic 09 · slides 3–12, 15–19, 21–29"
 
+## Onboarding · Định hướng bài học {#onboarding span=12}
+
+**Trước khi bắt đầu**
+
+- Ôn logic mệnh đề và phép kéo theo ở Topic 07.
+- Hằng gọi tên một đối tượng, biến đại diện đối tượng; vị từ diễn đạt thuộc tính/quan hệ, ∀ là với mọi và ∃ là tồn tại.
+
+**Điểm cần lưu ý**
+
+- Nêu miền đối tượng trước khi dịch câu; thứ tự và phạm vi lượng từ có thể đổi nghĩa.
+- Không thay một hằng bằng hằng khác để ép unification thành công.
+- Phép thế phải dùng nhất quán ở mọi vị trí xuất hiện của cùng biến.
+
+**Sau bài học, bạn có thể**
+
+- Viết câu về đối tượng và quan hệ bằng vị từ và lượng từ.
+- Phân biệt “mỗi người có một người hướng dẫn” với “có một người hướng dẫn tất cả”.
+- Tìm phép thế đồng nhất cho ví dụ đơn giản hoặc chỉ ra xung đột.
+
+Nguồn khái niệm: Topic 09 · slides 5–12, 21–28. Các tình huống bổ sung bên dưới là ví dụ giải thích, không phải dữ kiện nguyên văn trong slide.
+
 ## Câu tổng quát được biểu diễn ra sao? {#representation}
 
 Ví dụ giải thích thêm: “Mọi người đều chết” là `∀x (Người(x)⇒Chết(x))`; “Socrates là người” là `Người(Socrates)`. Luật dùng biến nên áp dụng được cho mọi cá thể.[](source:slides09)
@@ -58,6 +79,30 @@ Unification tìm phép thế biến khiến hai biểu thức giống nhau. Ví 
 ## Ghi nhớ {#recap}
 
 FOL biểu diễn sự kiện và quan hệ có biến, nhưng suy dẫn phức tạp hơn do có nhiều thể hiện. Hợp giải FOL cần chuẩn hóa về clausal form, thay biến đúng cách và unification.[](source:slides09)
+
+## Ví dụ 1 · Mỗi sinh viên có thể có người hướng dẫn riêng {#worked-example-1}
+
+Ví dụ giải thích thêm · Topic 09 · slides 5–12, 21–28.
+
+Miền gồm người; SV(x) nghĩa x là sinh viên, HD(y,x) nghĩa y hướng dẫn x. Lan, Minh là sinh viên; An hướng dẫn Lan, Bình hướng dẫn Minh.
+
+1. “Mỗi sinh viên có ít nhất một người hướng dẫn” viết ∀x (SV(x)⇒∃y HD(y,x)).
+2. “Có một người hướng dẫn mọi sinh viên” viết ∃y ∀x (SV(x)⇒HD(y,x)).
+3. Xét mô hình chỉ có hai quan hệ HD(An,Lan), HD(Bình,Minh), với An và Bình là hai người khác nhau: câu thứ nhất đúng, câu thứ hai sai.
+
+**Kết luận:** Người làm chứng cho ∃y có thể phụ thuộc x ở câu đầu; câu sau đòi hỏi một y dùng chung cho tất cả sinh viên.
+
+## Ví dụ 2 · Một biến phải nhận cùng một giá trị {#worked-example-2}
+
+Ví dụ giải thích thêm · Topic 09 · slides 5–12, 21–28.
+
+Gọi Hoc(a,b) là quan hệ người a học môn b. Cần khớp Hoc(x,AI) với Hoc(Lan,y), trong đó Lan và AI là hằng, x và y là biến.
+
+1. Dùng phép thế θ={x/Lan, y/AI}, nghĩa là thay x bằng Lan và y bằng AI.
+2. Sau thế, cả hai biểu thức đều là Hoc(Lan,AI).
+3. Ngược lại, P(x,x) không khớp P(Lan,Minh) khi Lan và Minh là hai hằng khác nhau: vị trí đầu buộc x=Lan, vị trí sau lại buộc x=Minh.
+
+**Kết luận:** Unification ràng buộc biến nhất quán; nó không chỉ so tên vị từ hay khớp từng vị trí một cách độc lập.
 
 ## Thử thách luyện tập: Ghép luật với đối tượng {#challenge-practice}
 

@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "receiptId": "c1138328-6606-45c9-89e6-28582761e478",
+  "receiptId": "5550e82a-a347-4184-b609-88f1a03cb65b",
   "status": "current",
   "command": "deliver",
   "type": "explainer",
   "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/candidate.archify.md",
   "output": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/topic-09.html",
   "specification": {
-    "sha256": "5caec53cdfdba0ddddd25da05eab4c5692418bc93e50a685bf5f66116589d99f",
-    "bytes": 3880
+    "sha256": "3a1e4316a3d1436a10cfbd0f96ac01aa43fdc740e22e9b53745fc805980d35b0",
+    "bytes": 6694
   },
   "artifact": {
-    "sha256": "2b84a3a4213e13d1d0155f7267687baa50177ce6889b5f7325931a372fd682ae",
-    "bytes": 917158
+    "sha256": "1fd216302792855ae4e231cf21a69f31c268502275af8a90a05313613f89b1f3",
+    "bytes": 938298
   },
   "explainer": {
-    "preparedSha256": "caf2c64d5b780867bd34ae30840891c2c65e4052b770a62ab50c06d6571f889d",
+    "preparedSha256": "a8cdf38b1cf37d1187abe3d6bc4ad5af4b22b378c1fbf228517307becc3c0703",
     "dependencies": [
       {
         "kind": "diagram-spec",

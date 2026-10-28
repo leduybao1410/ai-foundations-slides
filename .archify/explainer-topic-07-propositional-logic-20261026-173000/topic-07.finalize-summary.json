@@ -7,13 +7,13 @@
   "quality": "showcase",
   "specification": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/candidate.archify.md",
-    "sha256": "d31e046f0f38356dcf9e6c17f5e7b64fda3de98f6f5059ceedf08d49bab2f097",
-    "bytes": 3258
+    "sha256": "1dca7d1dcdcae2ea8b2fd3117fed3aa06d57af49c3a507b8b68cfa03ece087eb",
+    "bytes": 5661
   },
   "artifact": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-07-propositional-logic-20261026-173000/topic-07.html",
-    "sha256": "4fca7a38dc0c540735eeb5dfbf8a9f16f381f6231b7c9700c8c588a4badf6e6f",
-    "bytes": 519181
+    "sha256": "12946966109e4d9ff57e7502f7ece904886815f67ad3f2fe0b351b01860828f4",
+    "bytes": 536595
   },
   "gates": {
     "validate": "pass",
@@ -42,7 +42,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 776,
+  "durationMs": 756,
   "browserCheck": {
     "requested": false,
     "ran": false

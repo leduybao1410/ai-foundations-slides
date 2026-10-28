@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-27T17:08:45.092Z",
+  "startedAt": "2026-10-28T04:12:19.431Z",
   "specification": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/candidate.archify.md",
-    "sha256": "5caec53cdfdba0ddddd25da05eab4c5692418bc93e50a685bf5f66116589d99f",
-    "bytes": 3880
+    "sha256": "3a1e4316a3d1436a10cfbd0f96ac01aa43fdc740e22e9b53745fc805980d35b0",
+    "bytes": 6694
   },
   "artifact": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/topic-09.html",
-    "sha256": "2b84a3a4213e13d1d0155f7267687baa50177ce6889b5f7325931a372fd682ae",
-    "bytes": 917158
+    "sha256": "1fd216302792855ae4e231cf21a69f31c268502275af8a90a05313613f89b1f3",
+    "bytes": 938298
   },
   "stages": {
     "browser-check": {
@@ -42,8 +42,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "5caec53cdfdba0ddddd25da05eab4c5692418bc93e50a685bf5f66116589d99f",
-          "bytes": 3880
+          "sha256": "3a1e4316a3d1436a10cfbd0f96ac01aa43fdc740e22e9b53745fc805980d35b0",
+          "bytes": 6694
         },
         "validation": {
           "checksPassed": 4,
@@ -72,14 +72,14 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "c1138328-6606-45c9-89e6-28582761e478",
+        "receiptId": "5550e82a-a347-4184-b609-88f1a03cb65b",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/candidate.archify.md",
         "output": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/topic-09.html",
         "explainer": {
-          "preparedSha256": "caf2c64d5b780867bd34ae30840891c2c65e4052b770a62ab50c06d6571f889d",
+          "preparedSha256": "a8cdf38b1cf37d1187abe3d6bc4ad5af4b22b378c1fbf228517307becc3c0703",
           "dependencies": [
             {
               "kind": "diagram-spec",
@@ -98,12 +98,12 @@
           ]
         },
         "specification": {
-          "sha256": "5caec53cdfdba0ddddd25da05eab4c5692418bc93e50a685bf5f66116589d99f",
-          "bytes": 3880
+          "sha256": "3a1e4316a3d1436a10cfbd0f96ac01aa43fdc740e22e9b53745fc805980d35b0",
+          "bytes": 6694
         },
         "artifact": {
-          "sha256": "2b84a3a4213e13d1d0155f7267687baa50177ce6889b5f7325931a372fd682ae",
-          "bytes": 917158
+          "sha256": "1fd216302792855ae4e231cf21a69f31c268502275af8a90a05313613f89b1f3",
+          "bytes": 938298
         },
         "validation": {
           "checksPassed": 4,
@@ -113,6 +113,50 @@
           "errors": 0,
           "warnings": 0
         },
+        "diagnostics": [
+          {
+            "code": "explainer/writing-sentence-length",
+            "severity": "warning",
+            "message": "Sentence has 31 reading units, above the configured en limit of 28.",
+            "subject": {
+              "line": 91,
+              "component": "list",
+              "panelId": "worked-example-1",
+              "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/candidate.archify.md"
+            },
+            "evidence": {
+              "rule": "sentence-length",
+              "reason": "Sentence has 31 reading units, above the configured en limit of 28.",
+              "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+              "units": 31,
+              "limit": 28
+            },
+            "supportedFixes": [
+              "Split at a logical action or condition boundary while preserving qualifications and causal links."
+            ]
+          },
+          {
+            "code": "explainer/writing-sentence-length",
+            "severity": "warning",
+            "message": "Sentence has 32 reading units, above the configured en limit of 28.",
+            "subject": {
+              "line": 103,
+              "component": "list",
+              "panelId": "worked-example-2",
+              "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/candidate.archify.md"
+            },
+            "evidence": {
+              "rule": "sentence-length",
+              "reason": "Sentence has 32 reading units, above the configured en limit of 28.",
+              "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+              "units": 32,
+              "limit": 28
+            },
+            "supportedFixes": [
+              "Split at a logical action or condition boundary while preserving qualifications and causal links."
+            ]
+          }
+        ],
         "update": {
           "status": "unavailable",
           "installedVersion": null,
@@ -124,12 +168,13 @@
           "noticeText": null,
           "reason": "disabled"
         }
-      }
+      },
+      "stderr": "archify: Sentence has 31 reading units, above the configured en limit of 28.\narchify: Sentence has 32 reading units, above the configured en limit of 28."
     },
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 271,
+      "durationMs": 279,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
@@ -142,15 +187,15 @@
         "file": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/topic-09.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "2b84a3a4213e13d1d0155f7267687baa50177ce6889b5f7325931a372fd682ae",
-          "bytes": 917158
+          "sha256": "1fd216302792855ae4e231cf21a69f31c268502275af8a90a05313613f89b1f3",
+          "bytes": 938298
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "54 unique DOM IDs"
+              "72 unique DOM IDs"
             ]
           },
           {
@@ -188,7 +233,7 @@
               "id": "fol-model",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-Bz9APH/child.html",
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-sbKaPY/child.html",
                 "artifact": {
                   "sha256": "131fdc46a92909fda5b554e7715091ad268a2575718e3df4b864cdd5a917fdbe",
                   "bytes": 831585
@@ -315,7 +360,7 @@
               "id": "unification-diagram",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-r2K695/child.html",
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-VYl1Jc/child.html",
                 "artifact": {
                   "sha256": "2e801e6ad25d3c27abf374d565070d40bed7802225946be913e3958514f7bfb4",
                   "bytes": 831052
@@ -442,7 +487,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "c1138328-6606-45c9-89e6-28582761e478"
+        "deliveryReceiptId": "5550e82a-a347-4184-b609-88f1a03cb65b"
       }
     }
   },
@@ -450,14 +495,57 @@
     "requested": false,
     "ran": false
   },
-  "diagnostics": [],
+  "diagnostics": [
+    {
+      "code": "explainer/writing-sentence-length",
+      "severity": "warning",
+      "message": "Sentence has 31 reading units, above the configured en limit of 28.",
+      "subject": {
+        "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/candidate.archify.md",
+        "line": 91,
+        "component": "list",
+        "panelId": "worked-example-1"
+      },
+      "evidence": {
+        "reason": "Sentence has 31 reading units, above the configured en limit of 28.",
+        "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+        "rule": "sentence-length",
+        "units": 31,
+        "limit": 28
+      },
+      "supportedFixes": [
+        "Split at a logical action or condition boundary while preserving qualifications and causal links."
+      ]
+    },
+    {
+      "code": "explainer/writing-sentence-length",
+      "severity": "warning",
+      "message": "Sentence has 32 reading units, above the configured en limit of 28.",
+      "subject": {
+        "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/candidate.archify.md",
+        "line": 103,
+        "component": "list",
+        "panelId": "worked-example-2"
+      },
+      "evidence": {
+        "reason": "Sentence has 32 reading units, above the configured en limit of 28.",
+        "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+        "rule": "sentence-length",
+        "units": 32,
+        "limit": 28
+      },
+      "supportedFixes": [
+        "Split at a logical action or condition boundary while preserving qualifications and causal links."
+      ]
+    }
+  ],
   "evidence": {
     "receipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/topic-09.finalize.json",
     "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-09-first-order-logic-20261026-173000/topic-09.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-27T17:08:46.082Z",
-  "durationMs": 989,
+  "finishedAt": "2026-10-28T04:12:20.429Z",
+  "durationMs": 997,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

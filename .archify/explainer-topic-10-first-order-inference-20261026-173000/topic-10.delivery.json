@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "receiptId": "7dd2e1e2-8b2f-4069-86dd-22847aa030e5",
+  "receiptId": "08fd8dce-d209-4d4b-8ec5-a7570e2dedf8",
   "status": "current",
   "command": "deliver",
   "type": "explainer",
   "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-10-first-order-inference-20261026-173000/candidate.archify.md",
   "output": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-10-first-order-inference-20261026-173000/topic-10.html",
   "specification": {
-    "sha256": "8c7c8a3f91e00041828e34f192684aa9b72d054586a94be1620189dfae6adcf6",
-    "bytes": 4171
+    "sha256": "33f3ced92c31d8d3e8cc34785dd7c217bb9bf9753bd22ed0af708f2641857541",
+    "bytes": 6720
   },
   "artifact": {
-    "sha256": "c6d1cb79f4b818c9491d8301617e2a699d3e3324c08420d0d89a8d6e5b4b3aba",
-    "bytes": 928946
+    "sha256": "30e2548e6a06f8cb1b0b4b0cb9083eeb9707d068fd38c2915c4c20856b869947",
+    "bytes": 946854
   },
   "explainer": {
-    "preparedSha256": "6331e7c903d73e1c9737821b26cccd28ddf8629be17ab3b7bc04c360dcd37def",
+    "preparedSha256": "c33b0e0e626477de35e9950fcb72a17af0840d0996f058a33ef167e9f1a2fbaa",
     "dependencies": [
       {
         "kind": "diagram-spec",

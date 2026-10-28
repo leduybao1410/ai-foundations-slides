@@ -7,13 +7,13 @@
   "quality": "showcase",
   "specification": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-10-first-order-inference-20261026-173000/candidate.archify.md",
-    "sha256": "8c7c8a3f91e00041828e34f192684aa9b72d054586a94be1620189dfae6adcf6",
-    "bytes": 4171
+    "sha256": "33f3ced92c31d8d3e8cc34785dd7c217bb9bf9753bd22ed0af708f2641857541",
+    "bytes": 6720
   },
   "artifact": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-10-first-order-inference-20261026-173000/topic-10.html",
-    "sha256": "c6d1cb79f4b818c9491d8301617e2a699d3e3324c08420d0d89a8d6e5b4b3aba",
-    "bytes": 928946
+    "sha256": "30e2548e6a06f8cb1b0b4b0cb9083eeb9707d068fd38c2915c4c20856b869947",
+    "bytes": 946854
   },
   "gates": {
     "validate": "pass",
@@ -42,7 +42,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 1039,
+  "durationMs": 1001,
   "browserCheck": {
     "requested": false,
     "ran": false

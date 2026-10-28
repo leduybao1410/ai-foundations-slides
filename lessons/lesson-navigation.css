@@ -1,0 +1,6 @@
+.course-lesson-nav { display:flex; margin:0 0 20px; }
+.course-lesson-home { display:inline-flex; align-items:center; gap:8px; box-sizing:border-box; min-height:44px; padding:10px 14px; border:1px solid var(--rule-strong,#cbd5d1); border-radius:10px; color:var(--ink,#192d36); background:var(--panel,#fff); font:inherit; font-size:14px; font-weight:650; line-height:1.4; text-decoration:none; }
+.course-lesson-home:hover { background:var(--sunk,#eef5f3); text-decoration:underline; text-underline-offset:3px; }
+.course-lesson-home:focus-visible { outline:2px solid currentColor; outline-offset:3px; }
+.course-lesson-home svg { flex-shrink:0; }
+@media print { .course-lesson-nav { display:none; } }

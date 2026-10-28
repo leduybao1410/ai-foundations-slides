@@ -10,6 +10,27 @@ Trong logic bậc nhất, luật có biến phải được khớp với dữ ki
 @meta locale=vi
 @source slides10 title="Topic 10 · slides 3–20"
 
+## Onboarding · Định hướng bài học {#onboarding span=12}
+
+**Trước khi bắt đầu**
+
+- Ôn clause/resolution ở Topic 08 và phép thế/unification ở Topic 09.
+- Phân biệt fact đã biết, luật có biến và truy vấn; đọc phép thế {x/Lan} là thay x bằng Lan.
+
+**Điểm cần lưu ý**
+
+- Hai tiền đề có cùng biến phải dùng cùng phép thế; không ghép facts tùy ý.
+- Mỗi lần dùng lại luật cần đổi tên biến riêng để tránh xung đột giữa các lần dùng.
+- Backward chaining cần quản lý mục tiêu lặp; tìm chưa ra đáp án không tự động chứng minh phủ định.
+
+**Sau bài học, bạn có thể**
+
+- Kết hợp unification và resolution trong một chứng minh phản chứng FOL nhỏ.
+- Sinh fact mới bằng forward chaining khi tất cả tiền đề đều khớp.
+- Tách truy vấn thành mục tiêu con và truyền phép thế xuyên suốt backward chaining.
+
+Nguồn khái niệm: Topic 10 · slides 3–10, 11–21. Các tình huống bổ sung bên dưới là ví dụ giải thích, không phải dữ kiện nguyên văn trong slide.
+
 ## Ví dụ quan hệ gia đình {#family}
 
 Facts: `Cha(Art,Bob)` và `Cha(Bob,Coe)`. Luật: `Cha(x,y)∧Cha(y,z)⇒Ong(x,z)`. Truy vấn `Ong(Art,?)` tìm một giá trị z phù hợp.[](source:slides10)
@@ -66,6 +87,30 @@ Bắt đầu với `Ong(Art,?)`. Tìm luật có kết luận `Ong(x,z)`, thế 
 | Backward | Truy vấn | Vòng lặp hoặc lặp lại mục tiêu con |
 
 Theo dõi mục tiêu trong stack để tránh vòng lặp, và ghi nhớ mục tiêu đã giải quyết để tránh tính lại. Mỗi lần dùng một luật, đổi tên biến luật để tránh nhầm với biến đang có trong truy vấn.[](source:slides10)
+
+## Ví dụ 1 · Chứng minh Lan được dự thi bằng hợp giải {#worked-example-1}
+
+Ví dụ giải thích thêm · Topic 10 · slides 3–10, 11–21.
+
+Gọi Dat(x) là “x đạt điều kiện”, DuThi(x) là “x được dự thi”. KB chứa Dat(Lan) và ∀x (Dat(x)⇒DuThi(x)).
+
+1. Đổi luật thành clause ¬Dat(x)∨DuThi(x); thêm ¬DuThi(Lan) để chứng minh phản chứng.
+2. Dùng phép thế {x/Lan}, hợp giải Dat(Lan) với clause của luật để nhận DuThi(Lan).
+3. Hợp giải DuThi(Lan) với ¬DuThi(Lan) được clause rỗng.
+
+**Kết luận:** KB suy dẫn DuThi(Lan); phép thế nối luật tổng quát với fact của cá thể cụ thể.
+
+## Ví dụ 2 · Không được ghép hai tiền đề của hai người {#worked-example-2}
+
+Ví dụ giải thích thêm · Topic 10 · slides 3–10, 11–21.
+
+Facts là Dat(Lan), NopBai(Minh). Luật Dat(x)∧NopBai(x)⇒QuaMon(x). Truy vấn QuaMon(Lan).
+
+1. Backward chaining thế x=Lan, tạo hai mục tiêu Dat(Lan) và NopBai(Lan).
+2. Dat(Lan) khớp fact, nhưng NopBai(Minh) không chứng minh được NopBai(Lan).
+3. Nếu thêm fact NopBai(Lan), cả hai mục tiêu đều thỏa và forward chaining cũng sinh QuaMon(Lan).
+
+**Kết luận:** Phải giữ cùng x xuyên suốt luật. Với KB ban đầu, chưa suy ra QuaMon(Lan); cũng chưa suy ra ¬QuaMon(Lan).
 
 ## Thử thách luyện tập: Truy tìm kết luận {#challenge-practice}
 

@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-10-27T17:08:49.219Z",
+  "startedAt": "2026-10-28T04:12:23.531Z",
   "specification": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md",
-    "sha256": "b386c9fb6b5c38752b19918d5bcba3c2b690582cb128cecbed1015163f29bb19",
-    "bytes": 3297
+    "sha256": "8c2f426643f24bc9ab0178621ebae9fe7e5ae25b955042c778463ccf01052a8d",
+    "bytes": 6064
   },
   "artifact": {
     "path": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.html",
-    "sha256": "5c2a9ea8167a47f19ab38fe7474d26177a8479bcf02692ebde875c938cf28fdf",
-    "bytes": 551896
+    "sha256": "c6cb8d2ea163614962e02e43a1b1fd71c014dc3daad96d1ddb7b844354a180b5",
+    "bytes": 574048
   },
   "stages": {
     "browser-check": {
@@ -42,8 +42,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "b386c9fb6b5c38752b19918d5bcba3c2b690582cb128cecbed1015163f29bb19",
-          "bytes": 3297
+          "sha256": "8c2f426643f24bc9ab0178621ebae9fe7e5ae25b955042c778463ccf01052a8d",
+          "bytes": 6064
         },
         "validation": {
           "checksPassed": 4,
@@ -58,7 +58,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 445,
+      "durationMs": 438,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
@@ -72,14 +72,14 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "33e6c714-56df-491a-93d5-fe63b6e71aea",
+        "receiptId": "1cfc7391-7424-4f9d-9b5a-302a85e73439",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md",
         "output": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.html",
         "explainer": {
-          "preparedSha256": "0230db4cf6d1b9a7296f933e0c099f7055864e725e1832e521cb08fe92a4d47e",
+          "preparedSha256": "b374432993d4419e7bef7e8f2970beb5b6f2d7a2ba99d6093a5bfe770da72941",
           "dependencies": [
             {
               "kind": "diagram-spec",
@@ -91,12 +91,12 @@
           ]
         },
         "specification": {
-          "sha256": "b386c9fb6b5c38752b19918d5bcba3c2b690582cb128cecbed1015163f29bb19",
-          "bytes": 3297
+          "sha256": "8c2f426643f24bc9ab0178621ebae9fe7e5ae25b955042c778463ccf01052a8d",
+          "bytes": 6064
         },
         "artifact": {
-          "sha256": "5c2a9ea8167a47f19ab38fe7474d26177a8479bcf02692ebde875c938cf28fdf",
-          "bytes": 551896
+          "sha256": "c6cb8d2ea163614962e02e43a1b1fd71c014dc3daad96d1ddb7b844354a180b5",
+          "bytes": 574048
         },
         "validation": {
           "checksPassed": 4,
@@ -106,6 +106,71 @@
           "errors": 0,
           "warnings": 0
         },
+        "diagnostics": [
+          {
+            "code": "explainer/writing-sentence-length",
+            "severity": "warning",
+            "message": "Sentence has 30 reading units, above the configured en limit of 28.",
+            "subject": {
+              "line": 82,
+              "component": "prose",
+              "panelId": "worked-example-1",
+              "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md"
+            },
+            "evidence": {
+              "rule": "sentence-length",
+              "reason": "Sentence has 30 reading units, above the configured en limit of 28.",
+              "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+              "units": 30,
+              "limit": 28
+            },
+            "supportedFixes": [
+              "Split at a logical action or condition boundary while preserving qualifications and causal links."
+            ]
+          },
+          {
+            "code": "explainer/writing-sentence-length",
+            "severity": "warning",
+            "message": "Sentence has 33 reading units, above the configured en limit of 28.",
+            "subject": {
+              "line": 88,
+              "component": "prose",
+              "panelId": "worked-example-1",
+              "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md"
+            },
+            "evidence": {
+              "rule": "sentence-length",
+              "reason": "Sentence has 33 reading units, above the configured en limit of 28.",
+              "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+              "units": 33,
+              "limit": 28
+            },
+            "supportedFixes": [
+              "Split at a logical action or condition boundary while preserving qualifications and causal links."
+            ]
+          },
+          {
+            "code": "explainer/writing-sentence-length",
+            "severity": "warning",
+            "message": "Sentence has 29 reading units, above the configured en limit of 28.",
+            "subject": {
+              "line": 94,
+              "component": "prose",
+              "panelId": "worked-example-2",
+              "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md"
+            },
+            "evidence": {
+              "rule": "sentence-length",
+              "reason": "Sentence has 29 reading units, above the configured en limit of 28.",
+              "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+              "units": 29,
+              "limit": 28
+            },
+            "supportedFixes": [
+              "Split at a logical action or condition boundary while preserving qualifications and causal links."
+            ]
+          }
+        ],
         "update": {
           "status": "unavailable",
           "installedVersion": null,
@@ -117,12 +182,13 @@
           "noticeText": null,
           "reason": "disabled"
         }
-      }
+      },
+      "stderr": "archify: Sentence has 30 reading units, above the configured en limit of 28.\narchify: Sentence has 33 reading units, above the configured en limit of 28.\narchify: Sentence has 29 reading units, above the configured en limit of 28."
     },
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 206,
+      "durationMs": 208,
       "command": [
         "/usr/local/bin/node",
         "/Volumes/data/Work/Tool/archify/archify/bin/archify.mjs",
@@ -135,15 +201,15 @@
         "file": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "5c2a9ea8167a47f19ab38fe7474d26177a8479bcf02692ebde875c938cf28fdf",
-          "bytes": 551896
+          "sha256": "c6cb8d2ea163614962e02e43a1b1fd71c014dc3daad96d1ddb7b844354a180b5",
+          "bytes": 574048
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "45 unique DOM IDs"
+              "63 unique DOM IDs"
             ]
           },
           {
@@ -180,7 +246,7 @@
               "id": "id3-tree",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-IODstt/child.html",
+                "file": "/var/folders/6f/3l6hzsvn2_v2lbwjpn2rgwv00000gp/T/archify-explainer-check-YFdfcJ/child.html",
                 "artifact": {
                   "sha256": "9fd37c134064914c0c03cd98926b07e22ea63be9f3a4389cba399c87a517a149",
                   "bytes": 836917
@@ -307,7 +373,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "33e6c714-56df-491a-93d5-fe63b6e71aea"
+        "deliveryReceiptId": "1cfc7391-7424-4f9d-9b5a-302a85e73439"
       }
     }
   },
@@ -315,14 +381,78 @@
     "requested": false,
     "ran": false
   },
-  "diagnostics": [],
+  "diagnostics": [
+    {
+      "code": "explainer/writing-sentence-length",
+      "severity": "warning",
+      "message": "Sentence has 30 reading units, above the configured en limit of 28.",
+      "subject": {
+        "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md",
+        "line": 82,
+        "component": "prose",
+        "panelId": "worked-example-1"
+      },
+      "evidence": {
+        "reason": "Sentence has 30 reading units, above the configured en limit of 28.",
+        "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+        "rule": "sentence-length",
+        "units": 30,
+        "limit": 28
+      },
+      "supportedFixes": [
+        "Split at a logical action or condition boundary while preserving qualifications and causal links."
+      ]
+    },
+    {
+      "code": "explainer/writing-sentence-length",
+      "severity": "warning",
+      "message": "Sentence has 33 reading units, above the configured en limit of 28.",
+      "subject": {
+        "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md",
+        "line": 88,
+        "component": "prose",
+        "panelId": "worked-example-1"
+      },
+      "evidence": {
+        "reason": "Sentence has 33 reading units, above the configured en limit of 28.",
+        "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+        "rule": "sentence-length",
+        "units": 33,
+        "limit": 28
+      },
+      "supportedFixes": [
+        "Split at a logical action or condition boundary while preserving qualifications and causal links."
+      ]
+    },
+    {
+      "code": "explainer/writing-sentence-length",
+      "severity": "warning",
+      "message": "Sentence has 29 reading units, above the configured en limit of 28.",
+      "subject": {
+        "input": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/candidate.archify.md",
+        "line": 94,
+        "component": "prose",
+        "panelId": "worked-example-2"
+      },
+      "evidence": {
+        "reason": "Sentence has 29 reading units, above the configured en limit of 28.",
+        "example": "先查缓存。未命中时再查数据库。 / Check the cache first. Query the database on a miss.",
+        "rule": "sentence-length",
+        "units": 29,
+        "limit": 28
+      },
+      "supportedFixes": [
+        "Split at a logical action or condition boundary while preserving qualifications and causal links."
+      ]
+    }
+  ],
   "evidence": {
     "receipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.finalize.json",
     "summaryReceipt": "/Volumes/data/Study/CNTT/Cơ sở trí tuệ nhân tạo - Slides/.archify/explainer-topic-12-decision-trees-20261026-173000/topic-12.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-10-27T17:08:50.004Z",
-  "durationMs": 784,
+  "finishedAt": "2026-10-28T04:12:24.305Z",
+  "durationMs": 773,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",
